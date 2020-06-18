@@ -9,3 +9,4 @@ questionario tst
 -no sistema a ser desenvolvido o encarregado de cada setor enviará tarefas diariamente ao sistema, essas tarefas são executadas pelos funcionários, e avaliada pelo TST, onde o mesmo vai determinar se para execução da tarefa em questão é preciso o uso de algum E.P.I que o mesmo não possua, se sim o mesmo irá ser direcionado a sala do TST, onde o mesmo irá destribuir o E.P.I corretamente e acrescentar em sua ficha de E.P.I online. no Marfrig o sistema possui algo semelhante?
 
 
+-o usuario do sistema vai se logar com a matricula e senha
