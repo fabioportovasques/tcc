@@ -10,3 +10,5 @@ questionario tst
 
 
 -o usuario do sistema vai se logar com a matricula e senha
+
+-todos os funcionarios terão aceso ao sistema(funcionario comum para consultar tarefas, funcionario -encarregado para enviar tarefas e TST para enalizar as tarefas)
