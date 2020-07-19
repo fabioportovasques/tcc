@@ -20,11 +20,19 @@
     <div class="container marcador-container ">
       <div class="row">
         <div class="marcador col-md-6 col-xl-6">
-          <img src="img/logo2.png" class="img-responsive">
+           <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Título do cartão</h4>
+                <h6 class="card-subtitle">Subtítulo do cartão</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+                <a class="btn btn-outline-primary" href="">Leia mais</a>
+              </div>
+              <img class="card-img-bottom" src="https://source.unsplash.com/random/600x200">
+            </div>
         </div>
       
       <div class="marcador2 col-md-4 col-xl-4">
-          <img src="img/logo.png" class="img-responsive">
+          <img src="img/logo-atual.png" class="img-responsive">
           <form>
             <div class="form-group">
               <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula">
@@ -34,7 +42,7 @@
               <input type="password" class="form-control form-control-lg"  id="exampleInputPassword1" placeholder="Senha">
             </div>
            
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-success active btn-block">Entrar</button>
           </form>
         </div>
 
