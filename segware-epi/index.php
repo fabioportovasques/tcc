@@ -17,17 +17,17 @@
   <body>
 
 
-    <div class="container marcador-container">
+    <div class="container marcador-container ">
       <div class="row">
         <div class="marcador col-md-6 col-xl-6">
-          <button class="btn btn-warning">Leia mais</button>
+          <img src="img/logo2.png" class="img-responsive">
         </div>
       
       <div class="marcador2 col-md-4 col-xl-4">
-
+          <img src="img/logo.png" class="img-responsive">
           <form>
             <div class="form-group">
-              <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula">
               
             </div>
             <div class="form-group">

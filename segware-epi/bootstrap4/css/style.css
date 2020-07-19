@@ -1,7 +1,14 @@
 
+body{
+	padding:50px;
+	margin: 10px;
+}
+
 .marcador {
-        background: #d3d3d3;
+        background: white;
         border-radius: 20px 0px 0px 20px;
+
+        
       }
 
  .marcador2 {
