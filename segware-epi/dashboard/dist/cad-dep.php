@@ -12,7 +12,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="../../bootstrap4/css/style.css">
+         <link rel="stylesheet" href="../../bootstrap4/css/style.css">
+        <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -33,7 +34,8 @@
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Trocar Usuário</a>
-                        <a class="dropdown-item" href="#">sobre</a>
+                        <a class="dropdown-item"   href="#"><span class="glyphicon glyphicon-shopping-cart"></span>sobre</a>
+                        <a class="dropdown-item" href="#">Ajuda</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="login.html">Logout</a>
                     </div>
@@ -99,27 +101,48 @@
                                 </nav>
                             </div>
 
-
-                           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                CADASTROS 
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTarefas" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                       TAREFAS
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                  </a>
+                            <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Cadastro Funcionarios</a>
-                                    <a class="nav-link" href="cad-dep.php">Cadastro Departamentos</a>
-                                    <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
-                                    <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
-                                    <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo-devolucao.php">Cadastro  Motivo Devolucções</a>
-                                    <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
-                                    <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
+                                    <a class="nav-link" href="cad-func.php">Cadastrar Tarefas</a>
+                                    <a class="nav-link" href="cad-dep.php">Editar Tarefa</a>
+                                    <a class="nav-link" href="cad-encarregado.php">Consultar Status Tarefa</a>
+                                    <a class="nav-link" href="cad-fabricante.php">Consultar Tarefas Pendentes</a>
+                                   
                                 </nav>
                             </div>
+                                   
+                                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                       FICHA DE EPI
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                  </a>
+                            <div class="collapse" id="collapseFichaEpi" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="cad-func.php">Ficha E.P.I</a>
+                                </nav>
+                            </div>   
+
+                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRelatorio" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                       RELATÓRIO
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                  </a>
+                            <div class="collapse" id="collapseRelatorio" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="cad-func.php">Funcionários</a>
+                                     <a class="nav-link" href="cad-func.php">E.P.I</a>
+                                </nav>
+                            </div>   
+
+                            
                     
                 </nav>
-            </div>
+        </div>
             <!--conteudo do meio -->
 
            <div class="container marcador-container ">
