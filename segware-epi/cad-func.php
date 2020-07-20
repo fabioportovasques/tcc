@@ -18,50 +18,24 @@
 
 
     <div class="container marcador-container ">
-      <div class="row">
-        <div class="marcador col-md-6 col-xl-6">
-           <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">SISTEMA DE GESTÃODE EPI</h4>
-                <h6 class="card-subtitle">SEGWARE EPI</h6>
-                <p class="card-text">O Sistema tem como objetivo facilitar o gerenciamento dos E.P.IS pela empresa, além de tornar mais seguro o dia a dia dos seus colaboradores, com análise completa de cada tarefa executada..</p>
-                <a class="btn btn-outline-primary" href="home_introducao.php">Leia mais</a>
-              </div>
-              <img class="card-img-bottom" src="img/epi.jpg">
-            </div>
-        </div>
-      
-      <div class="marcador2 col-md-4 col-xl-4">
-        <div class="card">
-          <div class="card-body">
-              <img src="img/logo3.png" class="img-responsive">
-              <form>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula">
-                  
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control form-control-lg"  id="exampleInputPassword1" placeholder="Senha">
-                </div>
-                <a href="#" class="badge badge-light">Esqueceu sua senha?</a>
-                 <br />
-                 <br />
-                <button type="submit" class="btn btn-success active btn-block">Entrar</button>
-              </form>
-           </div>
-           </div>   
-        </div>
-
-
-
-              <div class="marcador2 col-md-4 col-xl-4">
-
+              <div class="row">
+                  <div class="marcador col-md-6 col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">SISTEMA DE GESTÃODE EPI</h4>
+                                  <h6 class="card-subtitle">SEGWARE EPI</h6>
+                                  <p class="card-text">O Sistema tem como objetivo facilitar o gerenciamento dos E.P.IS pela empresa, além de tornar mais seguro o dia a dia dos seus colaboradores, com análise completa de cada tarefa executada..</p>
+                                  <a class="btn btn-outline-primary" href="home_introducao.php">Leia mais</a>
+                                </div>
+                                  <img class="card-img-bottom" src="img/epi.jpg">
+                            </div>
+                  </div>
+               
+        
           
-            </div>
-      </div>
+             
+
     </div>
-
-
 
 
     <!-- Optional JavaScript -->
