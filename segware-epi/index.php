@@ -34,7 +34,7 @@
       <div class="marcador2 col-md-4 col-xl-4">
         <div class="card">
           <div class="card-body">
-              <img src="img/logo-atual.png" class="img-responsive">
+              <img src="img/logo3.png" class="img-responsive">
               <form>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula">
