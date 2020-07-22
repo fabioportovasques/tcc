@@ -7,20 +7,20 @@
 
     <!-- Bootstrap CSS -->
 
-    
-     <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
-     <link rel="stylesheet" href="bootstrap4/css/style.css">
+    <link rel="stylesheet" href="bootstrap4/css/estilo.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+     
 
     
 
-    <title>Segware EPI</title>
+    <title>SEGWARE EPI</title>
   </head>
   <body>
 
 
-    <div class="container marcador-container ">
+    <div class="container marcador-container1 ">
       <div class="row">
-        <div class="marcador col-md-6 col-xl-6">
+        <div class="marcador1 col-md-6 col-xl-6">
            <div class="card">
               <div class="card-body">
                 <h4 class="card-title">SISTEMA DE GESTÃODE EPI</h4>
@@ -32,17 +32,17 @@
             </div>
         </div>
       
-      <div class="marcador2 col-md-4 col-xl-4">
+      <div class="marcador1 marcador-container1 col-md-6 col-xl-4">
         <div class="card">
           <div class="card-body">
               <img src="img/logo3.png" class="img-responsive">
               <form>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula">
+                  <input type="text" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula" required="">
                   
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg"  id="exampleInputPassword1" placeholder="Senha">
+                  <input type="password" class="form-control form-control-lg"  id="exampleInputPassword1" placeholder="Senha" required="">
                 </div>
                 <a href="#" class="badge badge-light" bi bi-arrow-up-left-square-fill>Esqueceu sua senha?</a>
 
@@ -64,7 +64,7 @@
 
 
 
-              <div class="marcador2 col-md-4 col-xl-4">
+              <div class="marcador1 marcador-container1 col-md-4 col-xl-4">
 
           
             </div>

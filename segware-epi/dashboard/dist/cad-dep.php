@@ -10,9 +10,9 @@
         <meta name="author" content="" />
         <title>Cadastro De Departamento</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/estilo.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-         <link rel="stylesheet" href="../../bootstrap4/css/style.css">
         <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
     </head>
     <body class="sb-nav-fixed">
@@ -203,26 +203,73 @@
         </div>
             <!--conteudo do meio -->
 
-           <div class="container marcador-container ">
-      <div class="row">
-        <div class="marcador col-md-6 col-xl-2">
-          
-        </div>
+            <div class="jumbotron col-md-12">
+                     <div class="row">
+                         <div class="col-md-6">
 
+                            <form>
         
+                                <!-- caixas de texto -->
+                                <div class="form-group">
+                                    <label for="usuario">Código Departamento</label>
+                                    <input class="form-control" type="text" id="cod-dep" disabled="">
+                                </div>
+                         </div>
+                       
+                       <div class="col-md-6">
 
-        <div class="marcador2 col-md-4 col-xl-10">  
-                 <div class="card">
-                      <div class="card-body">
-                            <h4 class="text-md-center"> Cadastro de Departamentos</p></h4>
-                            
-                            
-                      </div>
-                          
-                </div>
-        </div>
+                            <form>
         
-        
+                                <!-- caixas de texto -->
+                                <div class="form-group">
+                                    <label for="usuario">Nome Departamento</label>
+                                    <input class="form-control" type="text" id="cod-dep" >
+                                </div>
+                         </div>
+
+                     </div>
+                              
+                        <br />
+                        <br />     
+
+                                     
+
+                            <div class="row">
+                                            <div class="marcador1  col-sm-6">
+                                                <button class="btn btn-success btn-block" type="button">Cadastrar</button>
+                                            </div>
+                                            <div class="marcador1  col-md-6">
+                                                <input class="btn btn-success btn-block" type="reset" value="Apagar">
+                                    </form>
+                                            </div>
+
+                            </div>
+
+                       
+
+
+            </div>                      
+
+            <!-- testes 
+             <div class="container marcador-container ">    
+                     <div class="row">
+                         <div class="marcador col-md-4">teste</div>
+                     </div>   
+            </div>     
+                         
+             <div class="container marcador-container">    
+                    <div class="row">
+                            <div class="marcador  offset-md-4">
+                                <button class="btn btn-info" type="button">Esquerda</button>
+                            </div>
+                            <div class="marcador  offset-md-3">
+                                <button class="btn btn-success active" type="button">Ativo</button>
+                            </div>
+
+                     </div>
+            </div>
+    
+         -->
 
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
