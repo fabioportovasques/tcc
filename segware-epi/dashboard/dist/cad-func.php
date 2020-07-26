@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,12 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastro De Funcionários</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/estilo.css" rel="stylesheet" />
+        <title>Cadastrto de Funcionários</title>
+        <link rel="stylesheet" href="/../../bootstrap/css/estilo.css">
+        <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../../bootstrap4/css/bootstrap.min.css">
+
+
+        
+        
+
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -22,14 +24,14 @@
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="..." aria-label="Search" aria-describedby="basic-addon2" />
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
+
+    <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -203,89 +205,331 @@
         </div>
             <!--conteudo do meio -->
 
-            <div class="jumbotron col-md-12">
-                     <div class="row">
-                         <div class="col-md-4">
+           
+   <!--Início container--> <div class="container marcador-container1">
 
-                            <form>
-        
-                                <!-- caixas de texto -->
-                                <div class="form-group">
-                                    <label for="usuario">Matricula Funcionário</label>
-                                    <input class="form-control" type="text" id="matricula-func" disabled="">
-                                </div>
-                         </div>
-                       
-                       <div class="col-md-4">
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            
 
-                            <form>
-        
-                                <!-- caixas de texto -->
-                                <div class="form-group">
-                                    <label for="usuario">Nome Funcionário</label>
-                                    <input class="form-control" type="text" id="nome_func" nome="nome_func" >
-                                </div>
-                         </div>
+                                           <h4 class="text-center">Cadastro De Funcionários</h4><br />
+                <!--Início da linha-->     <div class="row">
 
+                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                                                       
+                                                                            <form action=""  method="POST" name="cad-func" > 
 
-                         <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Matricula Funcionário</label>
+                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " disabled="" required="" >    
+                                                                                    </div>
+                                                                                </div>
 
-                            
-        
-                                <!-- caixas de texto -->
-                                <div class="form-group">
-                                    <label for="usuario">CPF Funcionário</label>
-                                    <input class="form-control" type="text" id="cpf_func" nome="cpf_func">
-                                </div>
+                                 <!--Fim da coluna-->            </div>
 
-                                
-                         </div>
-
-                     </div>
+                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+                                                                        
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Nome Funcionário</label>
+                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome"  required="" >    
+                                                                                    </div>
+                                                                                </div>
 
 
-                              
-                        <br />
-                        <br />     
+                                <!--Fim da coluna-->             </div>
+                                                                    
 
-                                     
+                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                                                        
 
-                            <div class="row">
-                                            <div class="marcador1  col-sm-6">
-                                                <button class="btn btn-success btn-block" type="button">Cadastrar</button>
-                                            </div>
-                                            <div class="marcador1  col-md-6">
-                                                <input class="btn btn-success btn-block" type="reset" value="Apagar">
-                                    </form>
-                                            </div>
-
-                            </div>
-
-                       
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > CPF</label>
+                                                                                        <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF" required="" >    
+                                                                                    </div>
+                                                                                </div>
 
 
-            </div>                      
 
-            <!-- testes 
-             <div class="container marcador-container ">    
-                     <div class="row">
-                         <div class="marcador col-md-4">teste</div>
-                     </div>   
-            </div>     
-                         
-             <div class="container marcador-container">    
-                    <div class="row">
-                            <div class="marcador  offset-md-4">
-                                <button class="btn btn-info" type="button">Esquerda</button>
-                            </div>
-                            <div class="marcador  offset-md-3">
-                                <button class="btn btn-success active" type="button">Ativo</button>
-                            </div>
 
-                     </div>
-            </div>
-    
-         -->
+
+                                <!--Fim da coluna-->             </div>
+
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > RG</label>
+                                                                                        <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG"  required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > IDADE</label>
+                                                                                        <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade" required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Data de Nascimento</label>
+                                                                                        <input type="date" name="data-nascimento-func" id="data-nascimento-func" class="form-control " placeholder="Data de Nascimento" required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                       <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Nacionalidade</label>
+                                                                                        <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade"  required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                         <label > Sexo</label><br />
+                                                                                        <label > Masculino</label>
+                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1"> 
+                                                                                         <label > Femenino</label> 
+                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Celular</label>
+                                                                                        <input type="text" name="celular-func" id="celular-func" class="form-control "  required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Cidade</label>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                                <option>Bagé</option>
+                                                                                                <option>Hulha</option>
+                                                                                                <option>Candiota</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Número da Rua</label>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control "  required="" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">UF</label>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                                <option>RS</option>
+                                                                                                <option>SP</option>
+                                                                                                <option>RJ</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+                  <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Departamento</label>
+                                                                                            <select class="form-control" id="dep-func" name="dep-func">
+                                                                                                <option>Técnologia da informação</option>
+                                                                                                <option>Almoxarifado</option>
+                                                                                                <option>Manutenção</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Senha</label>
+                                                                                        <input type="password" name="senha-func" id="senha-func" class="form-control "  required="" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Status</label>
+                                                                                            <select class="form-control" id="status-func" name="status-func">
+                                                                                                <option>Ativo</option>
+                                                                                                <option>Inativo</option>
+                                                                                               
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
+
+                <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-6">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="arquivo">Foto</label>
+                                                                                            <input class="form-control-file" type="file" id="arquivo">
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                      
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-6">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Tipo Funcionário</label>
+                                                                                            <select class="form-control" id="tipo-func" name="tipo-func">
+                                                                                                <option>Encarregado</option>
+                                                                                                <option>Colaborador</option>
+                                                                                               
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
+
+
+                <br />
+
+                <!--Início da linha-->      <div class="row">
+                                                   
+
+                                <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                                                        <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
+                                 <!--Fim da coluna-->       </div>
+
+
+                                 <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
+                                <!--Fim da coluna-->      </div>                                
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+
+
+
+
+
+
+
+   <!--Fechamento container--> </div>           
+
+
+
+
 
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>

@@ -1,5 +1,7 @@
-
-
+body{
+    padding: 100px;
+    margin: 0px;
+}
 
 
 
@@ -11,6 +13,4 @@
 .marcador-container1{
     background: #FFFFF0;
     
-    
 }
-

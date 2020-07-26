@@ -3,9 +3,10 @@
 <head>
 	<title></title>
 
+	 
+   <link rel="stylesheet" href="bootstrap/css/estilo.css">
 
-	 <link rel="stylesheet" href="bootstrap4/css/estilo.css">
-    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+
 
 
 </head>
@@ -13,10 +14,10 @@
 
 	 <!--conteudo do meio -->
 
-         <div class="container marcador-container">
+         <div class="container marcador-container1">
 
 		         <h2 class="text-center">Cadastro De Funcionários</h2>
-		         <div class="row" style="border: 1px solid red">
+		         <div class="row">
 		         <div class="marcador col">área 1</div>
 		         <div class="marcador col">área 2</div>
 		         <div class="marcador col">área 3</div>
