@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Departamentos</title>
+        <title>Cadastrto de Motivos</title>
         <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -92,7 +92,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
+                                  <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -214,7 +214,7 @@
                                         <br />
                                         <br />
 
-                                           <h4 class="text-center">Cadastro De Departamentos</h4><br />
+                                           <h4 class="text-center">Cadastro De Motivos</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -223,7 +223,7 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
+                                                                                        <label > Código Motivo</label>
                                                                                         <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>
@@ -234,8 +234,8 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome Departamento</label>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <label > Nome do Motivo</label>
+                                                                                        <input type="text" name="nome-motivo" id="nome-motivo" class="form-control" placeholder="Nome do Motivo"  required="" >    
                                                                                     </div>
                                                                                 </div>
 

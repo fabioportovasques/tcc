@@ -92,7 +92,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo-devolucao.php">Cadastro  Motivo Devolucções</a>
+                                  <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>

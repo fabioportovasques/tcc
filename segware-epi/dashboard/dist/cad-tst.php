@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -7,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Departamentos</title>
+        <title>Cadastro de Técnico em Segurança do Trabalho</title>
         <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -18,19 +17,15 @@
         
 
     </head>
-
-
-
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">SEGWARE EPI</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                </div>
             </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
+
+    <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -203,39 +198,38 @@
                 </nav>
         </div>
             <!--conteudo do meio -->
-                           
 
            
    <!--Início container--> <div class="container marcador-container1">
 
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            
 
-                                           <h4 class="text-center">Cadastro De Departamentos</h4><br />
+                                           <h4 class="text-center">Cadastro de Técnico em Segurança do Trabalho</h4><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
-                                                                                        <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
+                                                                                        <label > Matricula do Técnico</label>
+                                                                                        <input type="text" name="matricula-tst" id="matricula-tst" class="form-control " placeholder="Insira a matricula do Funcionário" required="" >    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome Departamento</label>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <label > Nome do Técnico</label>
+                                                                                        <input type="text" name="nome-tst" id="nome-tst" class="form-control" placeholder="Nome do TST"  disabled="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -243,13 +237,23 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                
+                                <!--Início da coluna-->         <div class="marcado1r col-md-4">
+                                                                        
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                         <label for="cidade">Tipo Funcionário</label>
+                                                                                         <input type="text" name="tipo-tst" id="tipo-tst" class="form-control" placeholder="Técnico em Segurança do Trabalho"  disabled="" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+
+                                <!--Fim da coluna-->             </div>
+                                                      
+
 
                 <!--Fechamento da linha-->  </div>
 
-
-
-               
 
 
 
@@ -262,10 +266,10 @@
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->    <div class="marcador1 col-md-6">
+
+                                 <!--Início da coluna-->     <div class="marcador1 col-md-6">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->        </div>
-                                                                    
+                                <!--Fim da coluna-->      </div>                                
 
                 <!--Fechamento da linha-->  </div>
 
@@ -274,6 +278,11 @@
 
 
 
+
+
+
+
+   <!--Fechamento container--> </div>           
 
 
 

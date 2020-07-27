@@ -87,7 +87,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo-devolucao.php">Cadastro  Motivo Devolucções</a>
+                                    <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -211,7 +211,7 @@
                                            <h4 class="text-center">Cadastro De Encarregados</h4><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md-6">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
@@ -224,19 +224,29 @@
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md-6">
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome Encarregado</label>
-                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome"  disabled="" >    
                                                                                     </div>
                                                                                 </div>
 
 
                                 <!--Fim da coluna-->             </div>
                                                                     
+                                  <!--Início da coluna-->         <div class="marcado1r col-md-4">
+                                                                        
+                                                                                <div class="form-group">
+                                                                                     <label for="cidade">Tipo Funcionário</label>
+                                                                                     <input type="text" name="tipo-encarregado" id="tipo-encarregado" class="form-control" placeholder="Encarregado"  disabled="" >    
 
+                                                                                            
+                                                                                </div>
+
+
+                                <!--Fim da coluna-->             </div>
                                
 
 

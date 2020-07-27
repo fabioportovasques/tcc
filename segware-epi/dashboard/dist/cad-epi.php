@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -7,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Departamentos</title>
+        <title>Cadastro de E.P.IS</title>
         <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -18,19 +17,15 @@
         
 
     </head>
-
-
-
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">SEGWARE EPI</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                </div>
             </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
+
+    <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -92,7 +87,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
+                                   <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -203,18 +198,17 @@
                 </nav>
         </div>
             <!--conteudo do meio -->
-                           
 
            
    <!--Início container--> <div class="container marcador-container1">
 
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            
 
-                                           <h4 class="text-center">Cadastro De Departamentos</h4><br />
+                                           <h4 class="text-center">Cadastro de E.P.IS</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -223,8 +217,8 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
-                                                                                        <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
+                                                                                        <label > Codigo EPI</label>
+                                                                                        <input type="text" name="cod-epi" id="cod-epi" class="form-control " disabled=""  >    
                                                                                     </div>
                                                                                 </div>
 
@@ -234,8 +228,8 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome Departamento</label>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <label > Nome do E.P.I</label>
+                                                                                        <input type="text" name="nome-epic" id="nome-epi" class="form-control" placeholder="Nome EPI"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -243,14 +237,147 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                
+                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                                                        
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Descrição</label>
+                                                                                        <textarea id="descri-epi" class="md-textarea form-control" rows="2" required=""></textarea  >
+                                                                                    </div>
+                                                                                </div>
+
+
+
+
+
+                                <!--Fim da coluna-->             </div>
+
 
                 <!--Fechamento da linha-->  </div>
 
 
 
-               
+                 <!--Início da linha-->      <div class="row">
+                                                   
 
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Data de Fabricação</label>
+                                                                                        <input type="date" name="data-fabricacao-epi" id="data-fabricacao-epi" class="form-control "   required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Fabricante</label>
+                                                                                        <select class="form-control" id="fabricante-epi" name="fabricante-func">
+                                                                                                <option>Fujwara</option>
+                                                                                                <option>prometal</option>
+                                                                                                <option>MSA</option>
+                                                                                                <option>...</option>
+                                                                                            </select>                                                                                    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Fornecedor</label>
+                                                                                        <select class="form-control" id="fornecedor-epi" name="fornecedor-epi">
+                                                                                                <option>Fujwara</option>
+                                                                                                <option>prometal</option>
+                                                                                                <option>MSA</option>
+                                                                                                <option>...</option>
+                                                                                            </select>                                                                                         </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                       <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > C.A</label>
+                                                                                        <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A"  required="" >    
+                                                                                        <a class="btn btn-info" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx"  target="_blank"> Consultar C.A</a>
+                                                                                    </div>
+                                                                            </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                         <label > Vencimento C.A</label>
+                                                                                        <input type="date" name="vencimento-ca-epi" id="vencimento-ca-epi" class="form-control "  required="" >   
+                                                                                         
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Situação</label>
+                                                                                        <select class="form-control" id="situacao-epi" name="situacao-epi">
+                                                                                                <option>Em Campo</option>
+                                                                                                <option>Em Estoque</option>
+                                                                                                <option>...</option>
+                                                                                            </select>  
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-12">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Mínimo em estoque?</label>
+                                                                                         <input class="custom-range" type="range"  id="minimo-estoque" min="1" max="30" required="">      
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                       
+                <!--Fechamento da linha-->  </div>
 
 
                 <br />
@@ -262,10 +389,10 @@
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->    <div class="marcador1 col-md-6">
+
+                                 <!--Início da coluna-->     <div class="marcador1 col-md-6">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->        </div>
-                                                                    
+                                <!--Fim da coluna-->      </div>                                
 
                 <!--Fechamento da linha-->  </div>
 
@@ -274,6 +401,11 @@
 
 
 
+
+
+
+
+   <!--Fechamento container--> </div>           
 
 
 

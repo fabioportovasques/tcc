@@ -87,7 +87,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo-devolucao.php">Cadastro  Motivo Devolucções</a>
+                                   <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -277,7 +277,7 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome Fantazia</label>
-                                                                                        <input type="number" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" required="" >    
+                                                                                        <input type="text" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -290,7 +290,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Inscrição Estadual</label>
-                                                                                        <input type="number" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual" required="" >  
+                                                                                        <input type="number" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual">  
                                                                                     </div>
                                                                                 </div>
 
@@ -309,8 +309,8 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nacionalidade</label>
-                                                                                        <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade"  required="" >    
+                                                                                        <label > Bairro</label>
+                                                                                        <input type="text" name="bairro-fornecedor" id="bairro-fornecedor" class="form-control " placeholder="Bairro"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -320,11 +320,9 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                         <label > Sexo</label><br />
-                                                                                        <label > Masculino</label>
-                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1"> 
-                                                                                         <label > Femenino</label> 
-                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1" >    
+                                                                                         <label > Rua</label><br />
+                                                                                         <input type="text" name="rua-fornecedor" id="rua-fornecedor" class="form-control " placeholder="Rua"  required="" >    
+                                                                                
                                                                                     </div>
                                                                                 </div>
 
@@ -336,8 +334,9 @@
 
                                                                         <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Celular</label>
-                                                                                        <input type="text" name="celular-func" id="celular-func" class="form-control "  required="" >    
+                                                                                       <label > Número da Rua</label>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control "  required="" >    
+  
                                                                                     </div>
                                                                                 </div>
 
@@ -373,8 +372,8 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Número da Rua</label>
-                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control "  required="" >    
+                                                                                        <label > CEP</label>
+                                                                                        <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required="" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -411,13 +410,8 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label for="cidade">Departamento</label>
-                                                                                            <select class="form-control" id="dep-func" name="dep-func">
-                                                                                                <option>Técnologia da informação</option>
-                                                                                                <option>Almoxarifado</option>
-                                                                                                <option>Manutenção</option>
-                                                                                                <option>...</option>
-                                                                                            </select>    
+                                                                                        <label for="cidade">E-mail</label>
+                                                                                         <input type="text" name="email" id="email" class="form-control" placeholder="E-mail"  >        
                                                                                     </div>
                                                                                 </div>
 
@@ -427,8 +421,8 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Senha</label>
-                                                                                        <input type="password" name="senha-func" id="senha-func" class="form-control "  required="" >    
+                                                                                        <label > Site</label>
+                                                                                        <input type="text" name="site" id="site" class="form-control " placeholder="Site do Fornecedor" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -441,12 +435,8 @@
 
                                                                         <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label for="cidade">Status</label>
-                                                                                            <select class="form-control" id="status-func" name="status-func">
-                                                                                                <option>Ativo</option>
-                                                                                                <option>Inativo</option>
-                                                                                               
-                                                                                            </select>    
+                                                                                        <label for="cidade">Nome do Representante</label>
+                                                                                            <input type="text" name="Representante" id="Representante" class="form-control " placeholder="Nome do representante" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -459,12 +449,13 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-12">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label for="arquivo">Foto</label>
-                                                                                            <input class="form-control-file" type="file" id="arquivo">
+                                                                                        <label for="arquivo">Observação</label>
+                                                                                        <textarea id="obs" class="md-textarea form-control" rows="3"></textarea>
+
                                                                                     </div>
                                                                                 </div>
 
@@ -473,22 +464,6 @@
                                       
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md-6">
-
-
-                                                                        <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label for="cidade">Tipo Funcionário</label>
-                                                                                            <select class="form-control" id="tipo-func" name="tipo-func">
-                                                                                                <option>Encarregado</option>
-                                                                                                <option>Colaborador</option>
-                                                                                               
-                                                                                            </select>    
-                                                                                    </div>
-                                                                                </div>
-
-                                            
-                                        <!--Fim da coluna-->        </div>
                                                                             
 
                 <!--Fechamento da linha-->  </div>  

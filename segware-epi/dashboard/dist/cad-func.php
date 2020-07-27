@@ -87,7 +87,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo-devolucao.php">Cadastro  Motivo Devolucções</a>
+                                   <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -276,7 +276,7 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > IDADE</label>
+                                                                                        <label > Idade</label>
                                                                                         <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade" required="" >    
                                                                                     </div>
                                                                                 </div>
@@ -460,11 +460,15 @@
                                                    
 
                                         <!--Início da coluna-->     <div class="marcador1 col-md-4">
-
+                                                                              
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label for="arquivo">Foto</label>
-                                                                                            <input class="form-control-file" type="file" id="arquivo">
+                                                                                                  <label for="arquivo">Selecione uma foto</label>
+                                                                                                 <div class="custom-file">
+                                                                                                    <input class="custom-file-input" type="file" id="arquivo" required="">
+                                                                                                    <label class="custom-file-label">Selecione arquivo</label>
+                                                                                                 </div>    
+                                                                                                                                                                              
                                                                                     </div>
                                                                                 </div>
 
@@ -492,6 +496,7 @@
                                                                                             <select class="form-control" id="tipo-func" name="tipo-func">
                                                                                                 <option>Encarregado</option>
                                                                                                 <option>Colaborador</option>
+                                                                                                <option>TST</option>
                                                                                                
                                                                                             </select>    
                                                                                     </div>
