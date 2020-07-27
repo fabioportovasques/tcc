@@ -7,14 +7,48 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastrto de Fornecedores</title>
-        <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         
+        <script>
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>   
+
+         <style type="text/css">
         
+     body{
+              padding: 20px;
+              margin: 0px;
+          }
+
+
+
+          .marcador{
+             
+             
+          }
+
+          .marcador-container1{
+             
+            
+
+              
+          }
+
+
+          .campo-obrigatorio{
+            font-size: 20px;
+            color: red;
+          }
+
+
+    </style>
+
 
     </head>
     <body class="sb-nav-fixed">
@@ -229,7 +263,8 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome do Fornecedor</label>
-                                                                                        <input type="text" name="nome-fornecedor" id="nome-fornecedor" class="form-control" placeholder="Nome do Fornecedor"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-fornecedor" id="nome-fornecedor" class="form-control" placeholder="Nome do Fornecedor" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -243,7 +278,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > CNPJ</label>
-                                                                                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ do Fornecedor" required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ do Fornecedor" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -266,7 +302,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Razão Social</label>
-                                                                                        <input type="text" name="razao-social" id="razao-social" class="form-control " placeholder="Razão Social"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="razao-social" id="razao-social" class="form-control " placeholder="Razão Social" autocomplete="off"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -277,7 +314,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome Fantazia</label>
-                                                                                        <input type="text" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -290,7 +328,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Inscrição Estadual</label>
-                                                                                        <input type="number" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual">  
+                                                                                        <input type="text" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual">  
                                                                                     </div>
                                                                                 </div>
 
@@ -310,7 +348,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Bairro</label>
-                                                                                        <input type="text" name="bairro-fornecedor" id="bairro-fornecedor" class="form-control " placeholder="Bairro"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="bairro-fornecedor" id="bairro-fornecedor" class="form-control " placeholder="Bairro" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -320,8 +359,9 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                         <label > Rua</label><br />
-                                                                                         <input type="text" name="rua-fornecedor" id="rua-fornecedor" class="form-control " placeholder="Rua"  required="" >    
+                                                                                         <label > Rua</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
+                                                                                         <input type="text" name="rua-fornecedor" id="rua-fornecedor" class="form-control " placeholder="Rua" autocomplete="off" required="" >    
                                                                                 
                                                                                     </div>
                                                                                 </div>
@@ -335,7 +375,8 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                        <label > Número da Rua</label>
-                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control "  required="" >    
+                                                                                       <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off"  required="" >    
   
                                                                                     </div>
                                                                                 </div>
@@ -357,6 +398,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Cidade</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="cidade-func" name="cidade-func">
                                                                                                 <option>Bagé</option>
                                                                                                 <option>Hulha</option>
@@ -373,7 +415,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > CEP</label>
-                                                                                        <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" autocomplete="off" required="" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -387,6 +430,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">UF</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="cidade-func" name="cidade-func">
                                                                                                 <option>RS</option>
                                                                                                 <option>SP</option>
@@ -411,7 +455,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">E-mail</label>
-                                                                                         <input type="text" name="email" id="email" class="form-control" placeholder="E-mail"  >        
+                                                                                         <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" autocomplete="off" >        
                                                                                     </div>
                                                                                 </div>
 
@@ -422,7 +466,7 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Site</label>
-                                                                                        <input type="text" name="site" id="site" class="form-control " placeholder="Site do Fornecedor" >    
+                                                                                        <input type="text" name="site" id="site" class="form-control " placeholder="Site do Fornecedor" autocomplete="off" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -436,7 +480,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Nome do Representante</label>
-                                                                                            <input type="text" name="Representante" id="Representante" class="form-control " placeholder="Nome do representante" >    
+                                                                                            <input type="text" name="Representante" id="Representante" class="form-control " placeholder="Nome do representante" autocomplete="off" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -454,7 +498,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="arquivo">Observação</label>
-                                                                                        <textarea id="obs" class="md-textarea form-control" rows="3"></textarea>
+                                                                                        <textarea id="obs" class="md-textarea form-control" rows="3" autocomplete="off" data-toggle="tooltip" data-placement="right" title="Caso necessário, insira uma observação"></textarea>
 
                                                                                     </div>
                                                                                 </div>

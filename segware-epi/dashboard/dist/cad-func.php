@@ -7,14 +7,49 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastrto de Funcionários</title>
-        <link rel="stylesheet" href="css/estyle.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
+     <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>   
+
+    <style type="text/css">
         
-        
+     body{
+              padding: 20px;
+              margin: 0px;
+          }
+
+
+
+          .marcador{
+             
+             
+          }
+
+          .marcador-container1{
+             
+            
+
+              
+          }
+
+
+          .campo-obrigatorio{
+            font-size: 20px;
+            color: red;
+          }
+
+
+    </style>
+
 
     </head>
     <body class="sb-nav-fixed">
@@ -229,7 +264,9 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome Funcionário</label>
-                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome"  required="" >    
+                                                                                          <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome" autocomplete="off" required="" >    
+
                                                                                     </div>
                                                                                 </div>
 
@@ -243,7 +280,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > CPF</label>
-                                                                                        <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF" required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF"  autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -266,7 +304,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > RG</label>
-                                                                                        <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -277,7 +316,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Idade</label>
-                                                                                        <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade" required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade"  autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -290,6 +330,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Data de Nascimento</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                         <input type="date" name="data-nascimento-func" id="data-nascimento-func" class="form-control " placeholder="Data de Nascimento" required="" >    
                                                                                     </div>
                                                                                 </div>
@@ -310,7 +351,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nacionalidade</label>
-                                                                                        <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade"  required="" >    
+                                                                                        <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade" autocomplete="off" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -337,7 +378,8 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Celular</label>
-                                                                                        <input type="text" name="celular-func" id="celular-func" class="form-control "  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="celular-func" id="celular-func" class="form-control " autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -358,7 +400,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Cidade</label>
-                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func" required="">
                                                                                                 <option>Bagé</option>
                                                                                                 <option>Hulha</option>
                                                                                                 <option>Candiota</option>
@@ -374,7 +417,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Número da Rua</label>
-                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control "  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off" required="" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -388,6 +432,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">UF</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="cidade-func" name="cidade-func">
                                                                                                 <option>RS</option>
                                                                                                 <option>SP</option>
@@ -412,6 +457,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Departamento</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="dep-func" name="dep-func">
                                                                                                 <option>Técnologia da informação</option>
                                                                                                 <option>Almoxarifado</option>
@@ -428,7 +474,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Bairro</label>
-                                                                                        <input type="text" name="bairro" id="bairro" class="form-control "  required=""  placeholder="bairro">    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="bairro" id="bairro" class="form-control "  required="" autocomplete="off" placeholder="bairro">    
 
                                                                                     </div>
                                                                                 </div>
@@ -442,6 +489,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Status</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="status-func" name="status-func">
                                                                                                 <option>Ativo</option>
                                                                                                 <option>Inativo</option>
@@ -464,8 +512,9 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                                   <label for="arquivo">Selecione uma foto</label>
+                                                                                                  <span class="campo-obrigatorio">*</span>
                                                                                                  <div class="custom-file">
-                                                                                                    <input class="custom-file-input" type="file" id="arquivo" required="">
+                                                                                                    <input class="custom-file-input" type="file" id="arquivo" required="" data-toggle="tooltip" data-placement="left" title="clique para inserir uma foto">
                                                                                                     <label class="custom-file-label">Selecione arquivo</label>
                                                                                                  </div>    
                                                                                                                                                                               
@@ -480,7 +529,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="arquivo">Senha</label>
-                                                                                            <input class="form-control" type="password" id="senha-func" required="" placeholder="Senha">
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <input class="form-control" type="password" id="senha-func" required="" autocomplete="off" placeholder="Senha">
                                                                                     </div>
                                                                                 </div>
 
@@ -493,6 +543,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Tipo Funcionário</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="tipo-func" name="tipo-func">
                                                                                                 <option>Encarregado</option>
                                                                                                 <option>Colaborador</option>

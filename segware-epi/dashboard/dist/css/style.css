@@ -16,3 +16,7 @@ body{
     
 }
 
+.campo-obrigatorio{
+	color: red;
+	font-size: 50px;
+}

@@ -7,14 +7,51 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastro de E.P.IS</title>
-        <link rel="stylesheet" href="css/estyle.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
+       
+        <script>
+                 $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+                });
+        </script>
 
         
+
+     <style type="text/css">
         
+     body{
+              padding: 20px;
+              margin: 0px;
+          }
+
+
+
+          .marcador{
+             
+             
+          }
+
+          .marcador-container1{
+             
+            
+
+              
+          }
+
+
+          .campo-obrigatorio{
+            font-size: 20px;
+            color: red;
+          }
+
+
+    </style>    
 
     </head>
     <body class="sb-nav-fixed">
@@ -229,7 +266,8 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome do E.P.I</label>
-                                                                                        <input type="text" name="nome-epic" id="nome-epi" class="form-control" placeholder="Nome EPI"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-epic" id="nome-epi" class="form-control" placeholder="Nome EPI"  autocomplete="off"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -243,7 +281,8 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Descrição</label>
-                                                                                        <textarea id="descri-epi" class="md-textarea form-control" rows="2" required=""></textarea  >
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <textarea id="descri-epi" class="md-textarea form-control" rows="2" required="" autocomplete="off" placeholder="ex: Cinturão de segurança tipo paraquedista"></textarea  >
                                                                                     </div>
                                                                                 </div>
 
@@ -266,6 +305,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Data de Fabricação</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="date" name="data-fabricacao-epi" id="data-fabricacao-epi" class="form-control "   required="" >    
                                                                                     </div>
                                                                                 </div>
@@ -277,6 +317,7 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Fabricante</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <select class="form-control" id="fabricante-epi" name="fabricante-func">
                                                                                                 <option>Fujwara</option>
                                                                                                 <option>prometal</option>
@@ -295,6 +336,7 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Fornecedor</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <select class="form-control" id="fornecedor-epi" name="fornecedor-epi">
                                                                                                 <option>Fujwara</option>
                                                                                                 <option>prometal</option>
@@ -319,8 +361,10 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > C.A</label>
-                                                                                        <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A"  required="" >    
-                                                                                        <a class="btn btn-info" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx"  target="_blank"> Consultar C.A</a>
+                                                                                         <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A" autocomplete="off" required="" >    
+                                                                                        <a class="btn btn-info" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx"  target="_blank" data-toggle="tooltip"  title="Consultar O C.A no site Ministério do trabalho"> Consultar C.A</a>
+                                                                                           
                                                                                     </div>
                                                                             </div>
 
@@ -331,6 +375,7 @@
                                                                               <div class="form-group">
                                                                                     <div class="   col">
                                                                                          <label > Vencimento C.A</label>
+                                                                                          <span class="campo-obrigatorio">*</span>
                                                                                         <input type="date" name="vencimento-ca-epi" id="vencimento-ca-epi" class="form-control "  required="" >   
                                                                                          
                                                                                     </div>
@@ -345,8 +390,9 @@
                                                                         <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Situação</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <select class="form-control" id="situacao-epi" name="situacao-epi">
-                                                                                                <option>Em Campo</option>
+                                                                                                <option>Emprestado</option>
                                                                                                 <option>Em Estoque</option>
                                                                                                 <option>...</option>
                                                                                             </select>  
@@ -370,7 +416,7 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Mínimo em estoque?</label>
-                                                                                         <input class="custom-range" type="range"  id="minimo-estoque" min="1" max="30" required="">      
+                                                                                         <input class="custom-range" type="range"  id="minimo-estoque" min="1" max="30"  data-toggle="tooltip" data-placement="right" title="Qual o Estoque Mínimo do Equipamento? de 1 - 35" required="">      
                                                                                     </div>
                                                                                 </div>
 

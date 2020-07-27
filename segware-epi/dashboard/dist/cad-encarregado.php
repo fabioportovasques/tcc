@@ -7,13 +7,17 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastrto de Encarregados</title>
-        <link rel="stylesheet" href="css/estyle.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-        
+        <script>
+            $(document).ready(function(){
+             $('[data-toggle="tooltip"]').tooltip();   
+             });
+        </script>
         
 
     </head>
@@ -218,7 +222,12 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Matricula Encarregado</label>
-                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " placeholder="Insira a matricula do Funcionário" required="" >    
+                                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                                        </svg>
+                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " placeholder="Insira a matricula do Funcionário" data-toggle="tooltip" data-placement="bottom" title="Insira  a matricula" required="" >    
+                                                                                        
                                                                                     </div>
                                                                                 </div>
 

@@ -8,14 +8,50 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastrto de Fabricantes</title>
-        <link rel="stylesheet" href="css/estyle.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
+        <script>
+                $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+                });
+        </script>
         
+
+     <style type="text/css">
         
+     body{
+              padding: 20px;
+              margin: 0px;
+          }
+
+
+
+          .marcador{
+             
+             
+          }
+
+          .marcador-container1{
+             
+            
+
+              
+          }
+
+
+          .campo-obrigatorio{
+            font-size: 20px;
+            color: red;
+          }
+
+
+    </style>
+
 
     </head>
 
@@ -235,7 +271,8 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Nome do Fabricante</label>
-                                                                                        <input type="text" name="nome-fabricante" id="nome-fabricante" class="form-control" placeholder="Nome do Fabricante"  required="" >    
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-fabricante" id="nome-fabricante" class="form-control" placeholder="Nome do Fabricante"  autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -256,7 +293,7 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Observação</label>
-                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3"></textarea>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" data-toggle="tooltip" data-placement="right" title="Se Necessário, adicione uma OBS"></textarea>
                                                                                     </div>
                                                                                 </div>
 

@@ -7,18 +7,42 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="bootstrap/css/style.css">
+ 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
      
 
-    
+    <style type="text/css">
+      
+
+
+          body{
+              padding: 50px;
+              margin: 0px;
+          }
+
+
+
+          .marcador{
+             
+             
+          }
+
+          .marcador-container1{
+             
+            
+
+              
+          }
+
+
+    </style>
 
     <title>SEGWARE EPI</title>
   </head>
   <body>
 
 
-    <div class="container marcador-container1 ">
+    <div class="container marcador-container1">
       <div class="row">
         <div class="marcador1 col-md-6 col-xl-6">
            <div class="card">
@@ -36,9 +60,9 @@
         <div class="card">
           <div class="card-body">
               <img src="img/logo3.png" class="img-responsive">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" style="min-width:100px" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sua Matricula" required="">
+              <form action="http://localhost/tcc/segware-epi/dashboard/dist/index.php" method="post">
+                <div class="form-group"><br />
+                  <input type="text" class="form-control form-control-lg"  placeholder="Sua Matricula" autocomplete="off" required="">
                   
                 </div>
                 <div class="form-group">
