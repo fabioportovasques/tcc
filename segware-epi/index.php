@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="bootstrap4/css/estilo.css">
-    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
      
 
     
@@ -23,8 +23,8 @@
         <div class="marcador1 col-md-6 col-xl-6">
            <div class="card">
               <div class="card-body">
-                <h4 class="card-title">SISTEMA DE GESTÃODE EPI</h4>
-                <h6 class="card-subtitle">SEGWARE EPI</h6>
+                <h4 class="card-title">SISTEMA DE GESTÃO DE EPI</h4>
+                <h6 class="card-subtitle">SEGWARE EPI</h6><br />
                 <p class="card-text">O Sistema tem como objetivo facilitar o gerenciamento dos E.P.IS pela empresa, além de tornar mais seguro o dia a dia dos seus colaboradores, com análise completa de cada tarefa executada..</p>
                 <a class="btn btn-outline-primary" href="home_introducao.php">Leia mais</a>
               </div>
