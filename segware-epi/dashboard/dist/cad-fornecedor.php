@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Funcionários</title>
+        <title>Cadastrto de Fornecedores</title>
         <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -208,7 +208,7 @@
                                             <br />
                                             
 
-                                           <h4 class="text-center">Cadastro De Funcionários</h4><br />
+                                           <h4 class="text-center">Cadastro De Fornecedores</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -217,8 +217,8 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Matricula Funcionário</label>
-                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " disabled="" required="" >    
+                                                                                        <label > Codigo do Fornecedor</label>
+                                                                                        <input type="text" name="cod-fornecedor" id="cod-fornecedor" class="form-control " disabled="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -228,8 +228,8 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome Funcionário</label>
-                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <label > Nome do Fornecedor</label>
+                                                                                        <input type="text" name="nome-fornecedor" id="nome-fornecedor" class="form-control" placeholder="Nome do Fornecedor"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -242,8 +242,8 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > CPF</label>
-                                                                                        <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF" required="" >    
+                                                                                        <label > CNPJ</label>
+                                                                                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ do Fornecedor" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -265,8 +265,8 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > RG</label>
-                                                                                        <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG"  required="" >    
+                                                                                        <label > Razão Social</label>
+                                                                                        <input type="text" name="razao-social" id="razao-social" class="form-control " placeholder="Razão Social"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -276,8 +276,8 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > IDADE</label>
-                                                                                        <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade" required="" >    
+                                                                                        <label > Nome Fantazia</label>
+                                                                                        <input type="number" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -289,8 +289,8 @@
 
                                                                         <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Data de Nascimento</label>
-                                                                                        <input type="date" name="data-nascimento-func" id="data-nascimento-func" class="form-control " placeholder="Data de Nascimento" required="" >    
+                                                                                        <label > Inscrição Estadual</label>
+                                                                                        <input type="number" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual" required="" >  
                                                                                     </div>
                                                                                 </div>
 
@@ -427,8 +427,8 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Bairro</label>
-                                                                                        <input type="text" name="bairro" id="bairro" class="form-control "  required=""  placeholder="bairro">    
+                                                                                        <label > Senha</label>
+                                                                                        <input type="password" name="senha-func" id="senha-func" class="form-control "  required="" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -459,7 +459,7 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-6">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -471,19 +471,9 @@
                                          <!--Fim da coluna-->       </div>
 
                                       
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
-
-                                                                             <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label for="arquivo">Senha</label>
-                                                                                            <input class="form-control" type="password" id="senha-func" required="" placeholder="Senha">
-                                                                                    </div>
-                                                                                </div>
-
-                                         <!--Fim da coluna-->       </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-6">
 
 
                                                                         <div class="form-group">
