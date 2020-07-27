@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Departamentos</title>
+        <title>Cadastrto de Fabricantes</title>
         <link rel="stylesheet" href="css/estyle.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -214,7 +214,7 @@
                                         <br />
                                         <br />
 
-                                           <h4 class="text-center">Cadastro De Departamentos</h4><br />
+                                           <h4 class="text-center">Cadastro De Fabricantes</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -223,8 +223,8 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
-                                                                                        <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
+                                                                                        <label > Código do Fabricante</label>
+                                                                                        <input type="text" name="cod-fabricante" id="cod-fabricante" class="form-control " disabled="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -234,8 +234,8 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome Departamento</label>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome"  required="" >    
+                                                                                        <label > Nome do Fabricante</label>
+                                                                                        <input type="text" name="nome-fabricante" id="nome-fabricante" class="form-control" placeholder="Nome do Fabricante"  required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -246,6 +246,29 @@
                                 
 
                 <!--Fechamento da linha-->  </div>
+
+                                <!--Início da linha-->     <div class="row">
+
+                                <!--Início da coluna-->          <div class="marcador1 col-md-12">
+                                                                       
+                                                                            <form action=""  method="POST" name="cad-func" > 
+
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Observação</label>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3"></textarea>
+                                                                                    </div>
+                                                                                </div>
+
+                                 <!--Fim da coluna-->            </div>
+
+                               
+                                                                    
+
+                                
+
+                <!--Fechamento da linha-->  </div>
+
 
 
 
