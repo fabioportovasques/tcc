@@ -6,24 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastro de E.P.IS</title>
+        <title>Consultar Funcionários</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-       
-        <script>
-                 $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();   
-                });
-        </script>
 
-        
+     <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>   
 
-     <style type="text/css">
+    <style type="text/css">
         
      body{
               padding: 20px;
@@ -51,7 +48,8 @@
           }
 
 
-    </style>    
+    </style>
+
 
     </head>
     <body class="sb-nav-fixed">
@@ -74,7 +72,7 @@
                                 </svg>
                        &nbsp Trocar Usuário</a>
 
-                        <a class="dropdown-item"   href="/tcc/segware-epi/sobre.php">
+                        <a class="dropdown-item"   href="tcc/segware-epi/sobre.php">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                         </svg>
@@ -245,7 +243,7 @@
                                             <br />
                                             
 
-                                           <h4 class="text-center">Cadastro de E.P.IS</h4><br />
+                                           <h4 class="text-center">Cadastro De Funcionários</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -254,8 +252,8 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Codigo EPI</label>
-                                                                                        <input type="text" name="cod-epi" id="cod-epi" class="form-control " disabled=""  >    
+                                                                                        <label > Matricula Funcionário</label>
+                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -265,9 +263,10 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome do E.P.I</label>
-                                                                                        <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="nome-epic" id="nome-epi" class="form-control" placeholder="Nome EPI"  autocomplete="off"  required="" >    
+                                                                                        <label > Nome Funcionário</label>
+                                                                                          <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome" autocomplete="off" required="" >    
+
                                                                                     </div>
                                                                                 </div>
 
@@ -280,9 +279,9 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Descrição</label>
+                                                                                        <label > CPF</label>
                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <textarea id="descri-epi" class="md-textarea form-control" rows="2" required="" autocomplete="off" placeholder="ex: Cinturão de segurança tipo paraquedista"></textarea  >
+                                                                                        <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF"  autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -304,9 +303,9 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Data de Fabricação</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="date" name="data-fabricacao-epi" id="data-fabricacao-epi" class="form-control "   required="" >    
+                                                                                        <label > RG</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -316,14 +315,9 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Fabricante</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="fabricante-epi" name="fabricante-func">
-                                                                                                <option>Fujwara</option>
-                                                                                                <option>prometal</option>
-                                                                                                <option>MSA</option>
-                                                                                                <option>...</option>
-                                                                                            </select>                                                                                    
+                                                                                        <label > Idade</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade"  autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -335,14 +329,10 @@
 
                                                                         <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Fornecedor</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="fornecedor-epi" name="fornecedor-epi">
-                                                                                                <option>Fujwara</option>
-                                                                                                <option>prometal</option>
-                                                                                                <option>MSA</option>
-                                                                                                <option>...</option>
-                                                                                            </select>                                                                                         </div>
+                                                                                        <label > Data de Nascimento</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="date" name="data-nascimento-func" id="data-nascimento-func" class="form-control " placeholder="Data de Nascimento" required="" >    
+                                                                                    </div>
                                                                                 </div>
 
                                             
@@ -360,13 +350,10 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > C.A</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A" autocomplete="off" required="" >    
-                                                                                        <a class="btn btn-info" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx"  target="_blank" data-toggle="tooltip"  title="Consultar O C.A no site Ministério do trabalho"> Consultar C.A</a>
-                                                                                           
+                                                                                        <label > Nacionalidade</label>
+                                                                                        <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade" autocomplete="off" >    
                                                                                     </div>
-                                                                            </div>
+                                                                                </div>
 
                                          <!--Fim da coluna-->       </div>
 
@@ -374,10 +361,11 @@
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
-                                                                                         <label > Vencimento C.A</label>
-                                                                                          <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="date" name="vencimento-ca-epi" id="vencimento-ca-epi" class="form-control "  required="" >   
-                                                                                         
+                                                                                         <label > Sexo</label><br />
+                                                                                        <label > Masculino</label>
+                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1"> 
+                                                                                         <label > Femenino</label> 
+                                                                                        <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -389,13 +377,9 @@
 
                                                                         <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Situação</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="situacao-epi" name="situacao-epi">
-                                                                                                <option>Emprestado</option>
-                                                                                                <option>Em Estoque</option>
-                                                                                                <option>...</option>
-                                                                                            </select>  
+                                                                                        <label > Celular</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="celular-func" id="celular-func" class="form-control " autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -411,19 +395,169 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-12">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label for="cidade">Mínimo em estoque?</label>
-                                                                                         <input class="custom-range" type="range"  id="minimo-estoque" min="1" max="30"  data-toggle="tooltip" data-placement="top" title="Qual o Estoque Mínimo do Equipamento? de 1 - 35" required="">      
+                                                                                        <label for="cidade">Cidade</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func" required="">
+                                                                                                <option>Bagé</option>
+                                                                                                <option>Hulha</option>
+                                                                                                <option>Candiota</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
                                                                                     </div>
                                                                                 </div>
 
                                          <!--Fim da coluna-->       </div>
 
-                                       
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Número da Rua</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off" required="" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">UF</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                                <option>RS</option>
+                                                                                                <option>SP</option>
+                                                                                                <option>RJ</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
                 <!--Fechamento da linha-->  </div>
+
+
+                  <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Departamento</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="dep-func" name="dep-func">
+                                                                                                <option>Técnologia da informação</option>
+                                                                                                <option>Almoxarifado</option>
+                                                                                                <option>Manutenção</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Bairro</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="bairro" id="bairro" class="form-control "  required="" autocomplete="off" placeholder="bairro">    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Status</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="status-func" name="status-func">
+                                                                                                <option>Ativo</option>
+                                                                                                <option>Inativo</option>
+                                                                                               
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
+
+                <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
+                                                                              
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                                  <label for="arquivo">Selecione uma foto</label>
+                                                                                                  <span class="campo-obrigatorio">*</span>
+                                                                                                 <div class="custom-file">
+                                                                                                    <input class="custom-file-input" type="file" id="arquivo" required="" data-toggle="tooltip" data-placement="left" title="clique para inserir uma foto">
+                                                                                                    <label class="custom-file-label">Selecione arquivo</label>
+                                                                                                 </div>    
+                                                                                                                                                                              
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                      
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="arquivo">Senha</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <input class="form-control" type="password" id="senha-func" required="" autocomplete="off" placeholder="Senha">
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Tipo Funcionário</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="tipo-func" name="tipo-func">
+                                                                                                <option>Encarregado</option>
+                                                                                                <option>Colaborador</option>
+                                                                                                <option>TST</option>
+                                                                                               
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
 
 
                 <br />

@@ -16,7 +16,7 @@
 
 
           body{
-              padding: 50px;
+              padding: 20px;
               margin: 0px;
           }
 
@@ -60,7 +60,7 @@
         <div class="card">
           <div class="card-body">
               <img src="img/logo3.png" class="img-responsive">
-              <form action="http://localhost/tcc/segware-epi/dashboard/dist/index.php" method="post">
+              <form action="dashboard/dist/index.php" method="post">
                 <div class="form-group"><br />
                   <input type="text" class="form-control form-control-lg"  placeholder="Sua Matricula" autocomplete="off" required="">
                   
