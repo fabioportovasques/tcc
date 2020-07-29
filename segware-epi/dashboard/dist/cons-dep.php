@@ -20,7 +20,7 @@
         });
         </script>
 
-       
+        
 
 
     </head>
@@ -238,7 +238,7 @@
                                         <br />
 
                                            <h4 class="text-center">Consultar Departamentos</h4><br />
-                <!--Início da linha-->     <div class="row">
+                <!--Início da linha-->     <div class="row" >
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                        
@@ -253,17 +253,16 @@
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
+                                 <!--Início da coluna-->         <div class="marcador1 col-md-6">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Pesquisar Departamento</label>
-                                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                                                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                                                                        </svg>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome Departamento"  data-toggle="tooltip" data-placement="top" title="Insira o nome do Deparatamento" autocomplete="off" required="" >    
-                                                                                       
+                                                                                            <label > Pesquisar Departamento</label>
+                                                                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                                                                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                                                </svg>
+                                                                                                <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome Departamento"  data-toggle="tooltip" data-placement="top" title="Insira o nome do Deparatamento" autocomplete="off" required="" >
                                                                                     </div>
                                                                                 </div>
 
@@ -271,15 +270,14 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
+                                 <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
-                                                                                <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                
+                                                                                    <div class="item">
 
-                                                                                        <label >Clique Aqui para Pesquisar</label>
-                                                                                             <button class="btn btn-success btn-block" type="submit">Pesquisar</button>
+                                                                                      <a class="btn  btn-success btn-block" href="#">Pesquisar</a>                                                       
                                                                                     </div>
-                                                                                </div>
+                                                                                
 
                                                                                 <!--Fim da coluna-->             
                                                                 </div>

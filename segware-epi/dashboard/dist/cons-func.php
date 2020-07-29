@@ -246,7 +246,7 @@
                                                                                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                                                                                         </svg>
                                                                                         <input type="text" name="matricula-func" id="matricula-func" class="form-control " placeholder="Insira a matricula" required="" data-toggle="tooltip" data-placement="top" title="Insira a Matricula a ser Pesquisada" >    
-                                                                                          <a class="btn btn-info" btn-sm href="#">Pesquisar </a>
+                                                                                          <a class="btn btn-success " btn-sm href="#">Pesquisar </a>
                                                                                     </div>
                                                                                 </div>
 

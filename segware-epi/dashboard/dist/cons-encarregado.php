@@ -253,7 +253,7 @@
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
+                                 <!--Início da coluna-->         <div class="marcador1 col-md-6">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
@@ -271,15 +271,13 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
+                                 <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
-                                                                                <div class="form-group">
-                                                                                    <div class="   col">
-
-                                                                                        <label >Clique Aqui para Pesquisar</label>
-                                                                                             <button class="btn btn-success btn-block" type="submit">Pesquisar</button>
+                                                                              
+                                                                                    <div class="item">
+                                                                                        <a class="btn  btn-success btn-block" href="#">Pesquisar</a> 
                                                                                     </div>
-                                                                                </div>
+                                                                              
 
                                                                                 <!--Fim da coluna-->             
                                                                 </div>

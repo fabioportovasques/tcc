@@ -11,6 +11,17 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
+<style type="text/css">
+      .caixa {
+        background: #f5f5f5;
+        height: 200px;
+      }
+      .item {
+        border:1px solid black;
+        padding: 5px;
+      }
+      
+    </style>
 
 
 
@@ -42,19 +53,25 @@ $(document).ready(function(){
 
 
 
- <!--Início da linha-->      <div class="row">
-                                                   
-
-                                <!--Início da coluna-->     <div class=" bot1 col-md-2">
-                                                                        <button class="btn btn-success btn-block" type="submit">Alterar</button>
-                                 <!--Fim da coluna-->       </div>
+ 
 
 
-                                 <!--Início da coluna-->     <div class="bot2 col-md-2">
-                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->      </div>                                
 
-                <!--Fechamento da linha-->  </div>
+  <div class="container">
+
+        <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
+      <div class="caixa d-flex">
+            <div class="item align-self-start">Flex item 1</div>
+            <div class="item align-self-center">Flex item 2</div>
+            <div class="item align-self-end">Flex item 3</div>
+            <div class="item align-self-baseline">Flex item 4</div>
+            <div class="item align-self-stretch">Flex item 5</div>
+      </div>
+      <br><br>
+
+  </div>  
+
+
 
 </body>
 </html>

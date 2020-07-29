@@ -242,7 +242,7 @@
                                            <h4 class="text-center">Consultar Fabricante</h4><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-6">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
@@ -258,7 +258,7 @@
                                
 
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md-6">
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
@@ -274,11 +274,13 @@
 
                                 <!--Fim da coluna-->             </div>
 
-                                   <!--Início da coluna-->          <div class="marcador1 col-md-2">
-                                                                            <label > Pesquisar</label>
-                                                                           <button class="btn btn-success btn-block" type="submit">Pesquisar</button>
+                                   <!--Início da coluna-->          <div class="col-md-2 flex-row-reverse">
+                                                                         <div class="item">
+                                                                                        <a class="btn  btn-success btn-block" href="#">Pesquisar</a> 
+                                                                        </div>
+                                                                                    
 
-                                 <!--Fim da coluna-->            </div>
+                                 <!--Fim da coluna-->               </div>
                                                                     
 
                                 
@@ -293,24 +295,25 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Observação</label>
-                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" data-toggle="tooltip" data-placement="top" title="Se Necessário, adicione uma OBS"></textarea>
+                                                                                        <label > Nome do Fabricante</label>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="2" ></textarea>
                                                                                     </div>
                                                                                 </div>
+
+                                                                              
 
                                  <!--Fim da coluna-->            </div>
 
                                
                                  <!--Início da coluna-->          <div class="marcador1 col-md-6">
                                                                        
-                                                                            <form action=""  method="POST" name="cad-func" > 
-
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome do Fabricante</label>
-                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" ></textarea>
+                                                                                        <label > Observação</label>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="2" data-toggle="tooltip" data-placement="top" title="Se Necessário, adicione uma OBS"></textarea>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div>       
+                                                                                
 
                                  <!--Fim da coluna-->            </div>                    
 
