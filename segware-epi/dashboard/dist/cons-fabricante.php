@@ -7,20 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Consultar Departamentos</title>
+        <title>Conssulta de Fabricantes</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <script>
-        $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
-        });
-        </script>
 
-       
+        <script>
+                $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+                });
+        </script>
+        
+
+     
 
 
     </head>
@@ -98,7 +100,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
+                                  <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -120,7 +122,8 @@
 
 
 
-                         
+                            
+                            
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="cons-func.php">
@@ -162,7 +165,6 @@
 
                                 </nav>
                             </div>
-
                                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTarefas" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
 
@@ -237,7 +239,7 @@
                                         <br />
                                         <br />
 
-                                           <h4 class="text-center">Consultar Departamentos</h4><br />
+                                           <h4 class="text-center">Consultar Fabricante</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-4">
@@ -246,72 +248,75 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
-                                                                                        <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
+                                                                                        <label > Código do Fabricante</label>
+                                                                                        <input type="text" name="cod-fabricante" id="cod-fabricante" class="form-control " disabled="" >    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
+                               
+
+
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-6">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Pesquisar Departamento</label>
+                                                                                        <label > Nome do Fabricante</label>
                                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                                                                                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                                                                                         </svg>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome Departamento"  data-toggle="tooltip" data-placement="top" title="Insira o nome do Deparatamento" autocomplete="off" required="" >    
-                                                                                       
+                                                                                        <input type="text" name="nome-fabricante" id="nome-fabricante" class="form-control" placeholder="Nome do Fabricante"  autocomplete="off" required="" data-toggle="tooltip" data-placement="top" title="Insira o nome do fabricante para ser pessquisado">    
                                                                                     </div>
                                                                                 </div>
 
 
                                 <!--Fim da coluna-->             </div>
+
+                                   <!--Início da coluna-->          <div class="marcador1 col-md-2">
+                                                                            <label > Pesquisar</label>
+                                                                           <button class="btn btn-success btn-block" type="submit">Pesquisar</button>
+
+                                 <!--Fim da coluna-->            </div>
                                                                     
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-4">
-                                                                        
+                                
+
+                <!--Fechamento da linha-->  </div>
+
+                                <!--Início da linha-->     <div class="row">
+
+                                <!--Início da coluna-->          <div class="marcador1 col-md-6">
+                                                                       
+                                                                            <form action=""  method="POST" name="cad-func" > 
+
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-
-                                                                                        <label >Clique Aqui para Pesquisar</label>
-                                                                                             <button class="btn btn-success btn-block" type="submit">Pesquisar</button>
+                                                                                        <label > Observação</label>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" data-toggle="tooltip" data-placement="top" title="Se Necessário, adicione uma OBS"></textarea>
                                                                                     </div>
                                                                                 </div>
 
-                                                                                <!--Fim da coluna-->             
-                                                                </div>
+                                 <!--Fim da coluna-->            </div>
 
+                               
+                                 <!--Início da coluna-->          <div class="marcador1 col-md-6">
+                                                                       
+                                                                            <form action=""  method="POST" name="cad-func" > 
 
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Nome do Fabricante</label>
+                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" ></textarea>
+                                                                                    </div>
+                                                                                </div>
 
-                <!--Fechamento da linha-->  </div>                                     
-                
-
-
-
-                 <!--Início da linha-->      <div class="row">
-                                                   
-
-                                <!--Início da coluna-->     <div class="bot1 col-md-12">
-                                                                <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Resultado da Pesquisa"  data-toggle="tooltip" data-placement="top" title="Resultado Retornado" autocomplete="off">
-                                 <!--Fim da coluna-->       </div>
-
-                                 
-                                                                        
-
-                <!--Fechamento da linha-->  </div>
-    
-
-
-
-
-
-                                                                                    
-
+                                 <!--Fim da coluna-->            </div>                    
 
                                 
+
+                <!--Fechamento da linha-->  </div>
 
 
 
@@ -325,12 +330,11 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="bot1 col-md-3">
-                                                                        <button class="btn btn-success btn-block" type="submit">Alterar Departamento</button>
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                        <button class="btn btn-success btn-block" type="submit">Alterar Fabricante</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 
-                                                                        
+                              
 
                 <!--Fechamento da linha-->  </div>
 
