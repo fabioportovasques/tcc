@@ -367,19 +367,29 @@
                        <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-3">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > C.A</label>
                                                                                          <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A" autocomplete="off" required="" >    
-                                                                                        <a class="btn btn-info" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx"  target="_blank" data-toggle="tooltip"  title="Consultar O C.A no site Ministério do trabalho"> Consultar C.A</a>
                                                                                            
                                                                                     </div>
                                                                             </div>
 
                                          <!--Fim da coluna-->       </div>
+
+                                           <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
+                                                                        
+                                                                              
+                                                                                   <div class="item2">
+
+                                                                                      <a class="btn  btn-success btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Consultar Venc. C.A" target="_blank">...</a>                                                       
+                                                                                    </div>
+
+                                                                                         
+                                  <!--Fim da coluna-->         </div>
 
                                          <!--Início da coluna-->    <div class="marcador1 col-md">
 
@@ -450,7 +460,11 @@
 
                                  <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->      </div>                                
+                                <!--Fim da coluna-->      </div>       
+
+                                 <!--Início da coluna-->     <div class="bot1 col-md-3">
+                                                                        <input class="btn btn-success container btn-block" type="reset" name="submit"  value="Gerar Cod de Barras">
+                                <!--Fim da coluna-->      </div>                          
 
                 <!--Fechamento da linha-->  </div>
 
