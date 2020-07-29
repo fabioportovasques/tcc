@@ -8,6 +8,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Cadastrto de Departamentos</title>
+        <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
@@ -19,35 +20,7 @@
         });
         </script>
 
-        <style type="text/css">
-        
-        body{
-              padding: 10px;
-              margin: 0px;
-          }
-
-
-
-          .marcador{
-             
-             
-          }
-
-          .marcador-container1{
-             
-            
-
-              
-          }
-
-
-          .campo-obrigatorio{
-            font-size: 20px;
-            color: red;
-          }
-
-
-    </style>
+       
 
 
     </head>
@@ -292,11 +265,11 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->    <div class="marcador1 col-md-6">
+                                 <!--Início da coluna-->    <div class="bot1 col-md-2">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
                                 <!--Fim da coluna-->        </div>
                                                                     

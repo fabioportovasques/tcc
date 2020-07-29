@@ -20,35 +20,7 @@
         });
     </script>   
 
-    <style type="text/css">
-        
-     body{
-              padding: 20px;
-              margin: 0px;
-          }
-
-
-
-          .marcador{
-             
-             
-          }
-
-          .marcador-container1{
-             
-            
-
-              
-          }
-
-
-          .campo-obrigatorio{
-            font-size: 20px;
-            color: red;
-          }
-
-
-    </style>
+   
 
 
     </head>
@@ -146,11 +118,11 @@
 
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    <a class="nav-link collapsed" href="cons-func.php">
                                         Funcionário 
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                     <a class="nav-link collapsed" href="cons-func.php">
                                         Departamento 
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -565,12 +537,12 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
 
-                                 <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
                                 <!--Fim da coluna-->      </div>                                
 

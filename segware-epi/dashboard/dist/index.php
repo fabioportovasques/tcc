@@ -146,7 +146,7 @@
 
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="http://localhost/tcc/segware-epi/dashboard/dist/cons-func.php" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    <a class="nav-link collapsed" href="cons-func.php" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                         Funcionário 
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -290,7 +290,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar mr-1"></i>
-                                        Total de Acidentes de Trabalho Durante o Ano
+                                        Total Gastos de E.P.IS até o Momento
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>

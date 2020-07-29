@@ -14,35 +14,29 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
+
        
         <script>
                  $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip();   
                 });
+
+                 $(document).ready(function() {
+                const $valueSpan = $('.valueSpan');
+                const $value = $('#slider1');
+                $valueSpan.html($value.val());
+                $value.on('input change', () => {
+                  $valueSpan.html($value.val());
+                });
+              });
+
         </script>
 
         
 
      <style type="text/css">
         
-     body{
-              padding: 20px;
-              margin: 0px;
-          }
-
-
-
-          .marcador{
-             
-             
-          }
-
-          .marcador-container1{
-             
-            
-
-              
-          }
+     
 
 
           .campo-obrigatorio{
@@ -416,7 +410,8 @@
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label for="cidade">Mínimo em estoque?</label>
-                                                                                         <input class="custom-range" type="range"  id="minimo-estoque" min="1" max="30"  data-toggle="tooltip" data-placement="top" title="Qual o Estoque Mínimo do Equipamento? de 1 - 35" required="">      
+                                                                                         <input class="custom-range"  type="range"  id="slider1" min="1" max="200"  data-toggle="tooltip" data-placement="top" title="Qual o Estoque Mínimo do Equipamento? de 1 - 200" required="">      
+                                                                                         <span class="font-weight-bold text-primary valueSpan"></span>
                                                                                     </div>
                                                                                 </div>
 
@@ -431,12 +426,12 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
 
-                                 <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
                                 <!--Fim da coluna-->      </div>                                
 

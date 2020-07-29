@@ -9,50 +9,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
 
-<style type="text/css">
-  
 
-@media (max-width: 566px) {
-          body{
-            background: red;
-            
-          }
-          .bot1{
 
-            margin: 5px;
-            padding: 0px;
-          }
 
-          .bot2{
+       
 
-            margin: 5px;
-            padding: 0px;
-          }
-
-       } 
-
-@media (min-width: 567px) {
-          body{
-            background: blue;
-            
-          }
-          
-          .bot1{
-
-            margin: 5px;
-            padding: 0px;
-          }
-
-          .bot2{
-
-            margin: 5px;
-            padding: 0px;
-          }
-       }        
-
-</style>
 
 </head>
 <body>
@@ -75,6 +39,7 @@ $(document).ready(function(){
 </script>
 
 -->
+
 
 
  <!--Início da linha-->      <div class="row">

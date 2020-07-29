@@ -14,32 +14,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
 
-         <style type="text/css">
-        
-     body{
-              padding: 20px;
-              margin: 0px;
-          }
-
-
-
-          .marcador{
-             
-             
-          }
-
-          .marcador-container1{
-             
-            
-
-              
-          }
-
-
-          .campo-obrigatorio{
-            font-size: 20px;
-            color: red;
-          }
+         
 
 
     </style>
@@ -264,7 +239,7 @@
                                                                                     <div class="   col">
                                                                                         <label > Nome do Motivo</label>
                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="nome-motivo" id="nome-motivo" class="form-control" placeholder="Nome do Motivo"  required="" >    
+                                                                                        <input type="text" name="nome-motivo" id="nome-motivo" class="form-control" placeholder="Nome do Motivo" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -287,11 +262,11 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="marcador1 col-md-6">
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->    <div class="marcador1 col-md-6">
+                                 <!--Início da coluna-->    <div class="bot1 col-md-2">
                                                                         <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
                                 <!--Fim da coluna-->        </div>
                                                                     
