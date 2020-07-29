@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -7,38 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de Fabricantes</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Consulta de Fornecedores</title>
+        <link href="css/style.css" rel="stylesheet"/>
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-        <script>
-                $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();   
-                });
-        </script>
         
+        <script>
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>   
 
-     
+         <style type="text/css">
+        
+    
+
+
+    </style>
 
 
     </head>
-
-
-
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">SEGWARE EPI</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                </div>
             </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
+
+    <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -100,7 +99,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                  <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
+                                   <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -122,8 +121,7 @@
 
 
 
-                            
-                            
+                           
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="cons-func.php">
@@ -165,6 +163,7 @@
 
                                 </nav>
                             </div>
+                           
                                   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTarefas" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
 
@@ -228,18 +227,17 @@
                 </nav>
         </div>
             <!--conteudo do meio -->
-                           
 
            
    <!--Início container--> <div class="container marcador-container1">
 
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            
 
-                                           <h4 class="text-center">Cadastro De Fabricantes</h4><br />
+                                           <h4 class="text-center">Consultar Fornecedores</h4><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md">
@@ -248,8 +246,13 @@
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código do Fabricante</label>
-                                                                                        <input type="text" name="cod-fabricante" id="cod-fabricante" class="form-control " disabled="" >    
+                                                                                        <label > Nome do Fornecedor</label>
+                                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                                        </svg>
+                                                                                        <input type="text" name="cod-fornecedor" id="cod-fornecedor" class="form-control" data-toggle="tooltip" data-placement="top" title="Insira o nome do fornecedor para pesquisar" >    
+                                                                                         <a class="btn btn-success " btn-sm href="#">Pesquisar </a>
                                                                                     </div>
                                                                                 </div>
 
@@ -259,9 +262,9 @@
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Nome do Fabricante</label>
+                                                                                        <label > Nome do Fornecedor</label>
                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="nome-fabricante" id="nome-fabricante" class="form-control" placeholder="Nome do Fabricante"  autocomplete="off" required="" >    
+                                                                                        <input type="text" name="nome-fornecedor" id="nome-fornecedor" class="form-control" placeholder="Nome do Fornecedor" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -269,37 +272,245 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                
+                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                                                        
 
-                <!--Fechamento da linha-->  </div>
-
-                                <!--Início da linha-->     <div class="row">
-
-                                <!--Início da coluna-->          <div class="marcador1 col-md-12">
-                                                                       
-                                                                            <form action=""  method="POST" name="cad-func" > 
-
-                                                                                <div class="form-group">
+                                                                              <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Observação</label>
-                                                                                        <textarea id="fabricante-obs" class="md-textarea form-control" rows="3" data-toggle="tooltip" data-placement="top" title="Se Necessário, adicione uma OBS"></textarea>
+                                                                                        <label > CNPJ</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="cnpj" id="cnpj" class="form-control" placeholder="CNPJ do Fornecedor" autocomplete="off" required="" >    
                                                                                     </div>
                                                                                 </div>
 
-                                 <!--Fim da coluna-->            </div>
 
-                               
-                                                                    
 
-                                
+
+
+                                <!--Fim da coluna-->             </div>
+
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Razão Social</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="razao-social" id="razao-social" class="form-control " placeholder="Razão Social" autocomplete="off"  required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Nome Fantazia</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-fantazia" id="nome-fantazia" class="form-control" placeholder="Nome Fantazia" autocomplete="off" required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Inscrição Estadual</label>
+                                                                                        <input type="text" name="Inscricao-estadual" id="Inscricao-estadual" class="form-control" placeholder="Inscricao Estadual">  
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                       <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Bairro</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="bairro-fornecedor" id="bairro-fornecedor" class="form-control " placeholder="Bairro" autocomplete="off" required="" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                         <label > Rua</label>
+                                                                                         <span class="campo-obrigatorio">*</span>
+                                                                                         <input type="text" name="rua-fornecedor" id="rua-fornecedor" class="form-control " placeholder="Rua" autocomplete="off" required="" >    
+                                                                                
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                       <label > Número da Rua</label>
+                                                                                       <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off"  required="" >    
+  
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
 
                 <!--Fechamento da linha-->  </div>
 
 
 
 
-               
+                 <!--Início da linha-->      <div class="row">
+                                                   
 
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Cidade</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                                <option>Bagé</option>
+                                                                                                <option>Hulha</option>
+                                                                                                <option>Candiota</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > CEP</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" autocomplete="off" required="" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">UF</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                            <select class="form-control" id="cidade-func" name="cidade-func">
+                                                                                                <option>RS</option>
+                                                                                                <option>SP</option>
+                                                                                                <option>RJ</option>
+                                                                                                <option>...</option>
+                                                                                            </select>    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+                  <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">E-mail</label>
+                                                                                         <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" autocomplete="off" >        
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+
+                                                                              <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Site</label>
+                                                                                        <input type="text" name="site" id="site" class="form-control " placeholder="Site do Fornecedor" autocomplete="off" >    
+
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+
+
+                                                                        <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="cidade">Nome do Representante</label>
+                                                                                            <input type="text" name="Representante" id="Representante" class="form-control " placeholder="Nome do representante" autocomplete="off" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
+
+                <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-12">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label for="arquivo">Observação</label>
+                                                                                        <textarea id="obs" class="md-textarea form-control" rows="3" autocomplete="off" data-toggle="tooltip" data-placement="top" title="Caso necessário, insira uma observação"></textarea>
+
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                      
+
+
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
 
 
                 <br />
@@ -308,13 +519,10 @@
                                                    
 
                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
+                                                                        <button class="btn btn-success btn-block" type="submit">Alterar Fornecedor</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->    <div class="bot1 col-md-2">
-                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->        </div>
-                                                                    
+                               
 
                 <!--Fechamento da linha-->  </div>
 
@@ -323,6 +531,11 @@
 
 
 
+
+
+
+
+   <!--Fechamento container--> </div>           
 
 
 

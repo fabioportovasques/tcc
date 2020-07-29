@@ -155,7 +155,7 @@
                                         TST
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                    <a class="nav-link collapsed" href="cons-fornecedor.php">
+                                    <a class="nav-link collapsed" href="cons-epi.php">
                                         E.P.I
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -276,10 +276,10 @@
                                                                                     <div class="item">
 
                                                                                       <a class="btn  btn-success btn-block" href="#">Pesquisar</a>                                                       
-                                                                                    </div>
+                                   <!--Fim da coluna-->           </div>
                                                                                 
 
-                                                                                <!--Fim da coluna-->             
+                                                                                          
                                                                 </div>
 
 
