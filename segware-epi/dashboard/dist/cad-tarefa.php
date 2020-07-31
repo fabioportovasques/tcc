@@ -234,30 +234,31 @@
                                             <br />
                                             
 
-                                           <h2 class="text-center">Cadastrto de tarefas</h2><br />
+                                           <h2 class="text-center">Cadastro de Tarefas</h2><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-sm-4">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Matricula do Encarregado</label>
+                                                                                           <span class="campo-obrigatorio">*</span>
                                                                                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                                                                                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                                                                                         </svg>
-                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control "  required="" data-toggle="tooltip" data-placement="right" title="Insira a Matricula do Encarregado">    
+                                                                                        <input type="number" name="matricula-func" id="matricula-func" class="form-control "  required="" data-toggle="tooltip" data-placement="right" title="Insira a Matricula do Encarregado">    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+                                 <!--Início da coluna-->         <div class="marcado1r col-sm-4">
                                                                         
                                                                                 <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="scol">
                                                                                         <label > Nome Responsável Tarefa</label>
                                                                                           <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="nome-tarefa" id="nome-func" class="form-control" placeholder="Responsável Pela Tarefa" autocomplete="off" required="" >    
@@ -269,7 +270,7 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-sm-4">
                                                                         
 
                                                                               <div class="form-group">
@@ -294,7 +295,7 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -306,7 +307,7 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
@@ -319,11 +320,11 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Descrição da Tarefa</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <textarea col="2" class="form-control " name="desc-tarefa" id="desc-tarefa" required="" placeholder="ex: Equipe Necessita subir no predio da área (B) para trocar lampadas"></textarea>
@@ -408,41 +409,33 @@
                                         <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label for="cidade">Adicionar Colaboradores</label>
+                                                                                    <div class="col">
+                                                                                        <label>Adicionar Colaboradores</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                              <input type="text" name="matricula-func" id="matricula-func" class="form-control "  required="" data-toggle="tooltip" data-placement="right" title="Insira a Matricula do colaborador">
 
                                                                                     </div>
-                                                                                </div>
+                                                                             </div>
 
                                          <!--Fim da coluna-->       </div>
 
                                          
 
-                                           <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
-                                                                        
-                                                                              
+                                           <!--Início da coluna-->         <div class="col-sm-2">
                                                                                    <div class="item6">
-
                                                                                       <a class="btn  btn-light  glyphicon glyphicon-plus" href="#" data-toggle="tooltip"  title="Add Colaborador" target="_blank"><i class="glyphicon glyphicon-add"></i></a>                                                       
                                                                                     </div>
-
-                                                                                         
-                                        <!--Fim da coluna-->                      </div>
+                                        <!--Fim da coluna-->                </div>
 
 
                                           <!--Início da coluna-->    <div class="marcador1 col-sm-6">
 
-
-                                                                                 <div class="item4">
                                                                                             <div class="col">
                                                                                                 <label for="cidade">Status</label>
                                                                                                 
                                                                                                     <input type="text"  class="form-control" name="status-tarefa" id="status-tarefa"  disabled="" placeholder="Em Análise" >   
                                                                                             </div>
-                                                                                </div>
-
+                                                                                
                                             
                                         <!--Fim da coluna-->        </div>
                                                                             

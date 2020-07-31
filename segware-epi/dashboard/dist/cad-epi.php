@@ -280,7 +280,7 @@
                                                                               
                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-light btn-block" href="#" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> <i class="glyphicon glyphicon-refresh"></i></a>                                                       
+                                                                                      <a class="btn  btn-light btn-block" href="#" data-toggle="tooltip"  title="Gerar Codigo" target="_blank"> <i class="glyphicon glyphicon-refresh"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
@@ -470,15 +470,15 @@
                                                    
 
                                   <!--Início da coluna-->     <div class="bot1 col-md-3">
-                                                                    <a class="btn  btn-success btn-block" href="https://www.barcode-generator.de/V2/pt/index.jsp" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> Gerar Codigo de Barras</a>
+                                                                    <a class="btn  btn-success btn-block" href="https://www.barcode-generator.de/V2/pt/index.jsp" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"><i class="glyphicon glyphicon-barcode"></i> </a>
                                 <!--Fim da coluna-->          </div>          
 
                                    <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->      </div> 
+                                                                    <button class="btn btn-success btn-block" type="submit" data-toggle="tooltip"  title="Excluir"><i class="glyphicon glyphicon-trash"></i> </button>
+                                <!--Fim da coluna-->             </div> 
 
                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
+                                                                        <button class="btn btn-success btn-block" data-toggle="tooltip"  title="Salvar Informações" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> </button>
                                  <!--Fim da coluna-->       </div>
 
 
