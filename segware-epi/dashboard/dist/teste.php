@@ -9,6 +9,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+  <!-- Icones -->
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
 <style type="text/css">
@@ -25,9 +31,10 @@
 
 
 
-
-       
-
+<div class="feature">
+  <i class="glyphicon glyphicon-home"></i>
+  <p class="text-danger">CLOUD CONNECTIVITY</p>
+</div>
 
 </head>
 <body>
@@ -72,6 +79,7 @@ $(document).ready(function(){
   </div>  
 
 
+<span class="glyphicon glyphicon-plus">teste</span>
 
 </body>
 </html>
