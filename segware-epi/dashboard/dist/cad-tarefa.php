@@ -234,7 +234,7 @@
                                             <br />
                                             
 
-                                           <h2 class="text-center">Cadastro de Tarefas</h2><br />
+                                           <h2 class="text-center">Adicionar Tarefas</h2><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-sm-4">
@@ -442,7 +442,16 @@
 
                 <!--Fechamento da linha-->  </div>  
 
-              
+                <div class="row">
+                    <div class="col-sm-12">
+
+                            <?php 
+                                include('tabela-grid.php');
+
+                            ?>
+
+                    </div>
+                </div>
 
                 <br />
 

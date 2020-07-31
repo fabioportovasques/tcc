@@ -17,24 +17,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
-<style type="text/css">
-      .caixa {
-        background: #f5f5f5;
-        height: 200px;
-      }
-      .item {
-        border:1px solid black;
-        padding: 5px;
-      }
-      
-    </style>
 
 
 
-<div class="feature">
-  <i class="glyphicon glyphicon-home"></i>
-  <p class="text-danger">CLOUD CONNECTIVITY</p>
-</div>
+
+
 
 </head>
 <body>
@@ -61,25 +48,42 @@ $(document).ready(function(){
 
 
  
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Matricula</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Departamento</th>
+      <th scope="col" align="center">Função</th>
+      <th scope="col" align="center">Excluir Colaborador</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">151589</th>
+      <td>Fábio Vasques</td>
+      <td>T.I</td>
+      <td>técnico em informática</td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button> </td>
+    </tr>
+    <tr>
+      <th scope="row">25678</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td align="center"><button class="btn btn-light"><i class="glyphicon glyphicon-minus"  data-toggle="tooltip"  data-placement="right" title="Excluir colaborador"></i></button></td>
+    </tr>
+    <tr>
+      <th scope="row">309858</th>
+      <td colspan="2">Larry the Bird</td>
+      <td></td>
+      <td align="center"><button class="btn btn-light"><i class="glyphicon glyphicon-minus"   data-toggle="tooltip"  data-placement="right" title="Excluir colaborador"></i></button></td>
+    </tr>
+  </tbody>
+</table>
 
 
-
-  <div class="container">
-
-        <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
-      <div class="caixa d-flex">
-            <div class="item align-self-start">Flex item 1</div>
-            <div class="item align-self-center">Flex item 2</div>
-            <div class="item align-self-end">Flex item 3</div>
-            <div class="item align-self-baseline">Flex item 4</div>
-            <div class="item align-self-stretch">Flex item 5</div>
-      </div>
-      <br><br>
-
-  </div>  
-
-
-<span class="glyphicon glyphicon-plus">teste</span>
 
 </body>
 </html>
+

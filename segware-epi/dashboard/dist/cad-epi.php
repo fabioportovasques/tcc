@@ -359,21 +359,21 @@
                                           <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
 
-                                                                        <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label > Fornecedor</label>
-                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="fornecedor-epi" name="fornecedor-epi" required="">
-                                                                                                <option></option>
-                                                                                                <option>Fujwara</option>
-                                                                                                <option>prometal</option>
-                                                                                                <option>MSA</option>
-                                                                                                
-                                                                                            </select>                                                                                         </div>
-                                                                                </div>
-
+                                                                                <div class="form-group">
+                                                                                            <div class="   col">
+                                                                                                <label > Fornecedor</label>
+                                                                                                 <span class="campo-obrigatorio">*</span>
+                                                                                                <select class="form-control" id="fornecedor-epi" name="fornecedor-epi" required="">
+                                                                                                        <option></option>
+                                                                                                        <option>Fujwara</option>
+                                                                                                        <option>prometal</option>
+                                                                                                        <option>MSA</option>
+                                                                                                        
+                                                                                                    </select>                                                                                         
+                                                                                            </div>
+                                                                                </div>        
                                             
-                                        <!--Fim da coluna-->        </div>
+                                        <!--Fim da coluna-->            </div>
                                                                             
 
                 <!--Fechamento da linha-->  </div>
