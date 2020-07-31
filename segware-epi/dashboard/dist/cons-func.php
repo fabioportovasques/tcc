@@ -133,10 +133,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                   
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -261,7 +258,7 @@
                                                                               
                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Clique para Consultar a Matricula" target="_blank"> <i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                                      <a class="btn  btn-light btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Clique para Consultar a Matricula" target="_blank"> <i class="glyphicon glyphicon-search"></i></a>                                                       
                                                                                     </div>
 
                                                                                          

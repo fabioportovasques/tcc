@@ -14,6 +14,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         
+
+        <!--Link para icones-->
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
         <script>
             $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();   
@@ -136,10 +141,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                   
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -237,10 +239,10 @@
                                             <br />
                                             
 
-                                           <h4 class="text-center">Consultar Fornecedores</h4><br />
+                                           <h2 class="text-center">Consultar Fornecedores</h2><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-3">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
@@ -252,13 +254,18 @@
                                                                                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                                                                                         </svg>
                                                                                         <input type="text" name="cod-fornecedor" id="cod-fornecedor" class="form-control" data-toggle="tooltip" data-placement="top" title="Insira o nome do fornecedor para pesquisar" >    
-                                                                                         <a class="btn btn-success " btn-sm href="#">Pesquisar </a>
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+                                  <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
+                                                                            <div class="item2">
+                                                                                 <a class="btn btn-light btn-sm" href="#"><i class="glyphicon glyphicon-search"></i> </a>
+                                                                            </div>
+                                <!--Fim da coluna-->             </div>
+
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
@@ -272,7 +279,7 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                         
 
                                                                               <div class="form-group">
@@ -297,7 +304,7 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -309,7 +316,7 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
@@ -322,7 +329,7 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
 
                                                                         <div class="form-group">
@@ -343,7 +350,7 @@
                        <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -355,7 +362,7 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
@@ -369,7 +376,7 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
 
                                                                         <div class="form-group">
@@ -393,7 +400,7 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -410,7 +417,7 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
@@ -424,7 +431,7 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
 
                                                                         <div class="form-group">
@@ -450,7 +457,7 @@
                   <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -461,7 +468,7 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
                                                                               <div class="form-group">
                                                                                     <div class="   col">
@@ -474,12 +481,12 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label for="cidade">Nome do Representante</label>
+                                                                                    <div class="col">
+                                                                                        <label for="cidade">Representante</label>
                                                                                             <input type="text" name="Representante" id="Representante" class="form-control " placeholder="Nome do representante" autocomplete="off" >    
                                                                                     </div>
                                                                                 </div>
@@ -493,7 +500,7 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-12">
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-12">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
@@ -518,21 +525,16 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                <!--Início da coluna-->     <div class="bot1 col-sm-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Alterar Fornecedor</button>
                                  <!--Fim da coluna-->       </div>
 
+                                <!--Início da coluna-->     <div class="bot1 col-sm-2">
+                                                                        <button class="btn btn-success btn-block" type="submit">Excluir Fornecedor</button>
+                                 <!--Fim da coluna-->       </div>
                                
 
                 <!--Fechamento da linha-->  </div>
-
-
-
-
-
-
-
-
 
 
    <!--Fechamento container--> </div>           

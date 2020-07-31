@@ -101,13 +101,15 @@
         .item {
         
         padding: 10px;
+        margin-left: -40px;
         margin-top: 20px;
         }
 
          .item2 {
         
-        padding: 0px;
-        margin-top: 40px;
+        padding: 10px;
+        margin-left: -40px;
+        margin-top: 15px;
         }
 
         .item3 {
@@ -128,6 +130,12 @@
         margin-top: 10px;
         }
 
+        .item6 {
+        
+        padding-top: 15px;
+        margin-left: -35px;
+        margin-top: 10px;
+        } 
           
        }        
 

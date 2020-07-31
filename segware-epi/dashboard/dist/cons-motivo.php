@@ -142,10 +142,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                   
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>

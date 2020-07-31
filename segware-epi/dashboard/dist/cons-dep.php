@@ -140,10 +140,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -242,23 +239,23 @@
                                         <br />
                                         <br />
 
-                                           <h2 class="text-center">Consultar Departamentos</h2><br />
+                                           <h2 class="text-center">Consultar Departamentos</h2><br /><br />
                 <!--Início da linha-->     <div class="row" >
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-2">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Código Departamento</label>
+                                                                                        <label > Cód Departamento</label>
                                                                                         <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-6">
+                                 <!--Início da coluna-->         <div class="marcador1 col-md-5">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
@@ -275,17 +272,23 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                 <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
-                                                                        
-                                                                                
-                                                                                    <div class="item5">
+                                 <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
+                                                                            <div class="item2">
+                                                                                      <a class="btn  btn-light btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                            </div>
+                                                                                         
+                                   <!--Fim da coluna-->         </div>
 
-                                                                                      <a class="btn  btn-dark btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a>                                                       
-                                   <!--Fim da coluna-->           </div>
-                                                                                
+                                     <!--Início da coluna-->     <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="col">
+                                                                          <label > Resultado da Pesquisa</label>
+                                                                             <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Resultado da Pesquisa"  data-toggle="tooltip" data-placement="top" title="Resultado Retornado" autocomplete="off">
+                                                                        </div>     
+                                                                    </div>
 
-                                                                                          
-                                                                </div>
+                                     <!--Fim da coluna-->       </div>
+                            
 
 
 
@@ -294,45 +297,20 @@
 
 
 
-                 <!--Início da linha-->      <div class="row">
-                                                   
-
-                                <!--Início da coluna-->     <div class="bot1 col-md-12">
-                                                                <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Resultado da Pesquisa"  data-toggle="tooltip" data-placement="top" title="Resultado Retornado" autocomplete="off">
-                                 <!--Fim da coluna-->       </div>
-
-                                 
-                                                                        
-
-                <!--Fechamento da linha-->  </div>
-    
-
-
-
-
-
-                                                                                    
-
-
-                                
-
-
-
-
-               
-
-
-
                 <br />
-
-                <!--Início da linha-->      <div class="row">
+                <br />
+                <br />
+                <br />
+                <br />
+              
+              <!--Início da linha-->      <div class="row">
                                                    
 
-                                <!--Início da coluna-->     <div class="bot1 col-md-3">
+                                <!--Início da coluna-->     <div class="col-sm-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Alterar Departamento</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 <!--Início da coluna-->     <div class="bot1 col-md-3">
+                                 <!--Início da coluna-->     <div class="col-sm-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Excluir Departamento</button>
                                  <!--Fim da coluna-->       </div>
                                                                         
@@ -341,7 +319,8 @@
 
 
 
-
+                 <!--Fechamento da form--></form>
+                <!--Fechamento Container--> </div>       
 
 
 

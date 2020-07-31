@@ -132,10 +132,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -243,6 +240,7 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Matricula Funcionário</label>
+                                                                                        <span class="campo-obrigatorio"></span>
                                                                                         <input type="text" name="matricula-func" id="matricula-func" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>

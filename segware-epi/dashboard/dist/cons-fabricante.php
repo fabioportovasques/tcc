@@ -143,10 +143,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -281,7 +278,7 @@
 
                                    <!--Início da coluna-->          <div class="col-md-2 flex-row-reverse">
                                                                          <div class="item5">
-                                                                                        <a class="btn  btn-dark btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a> 
+                                                                                        <a class="btn  btn-light btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a> 
                                                                         </div>
                                                                                     
 

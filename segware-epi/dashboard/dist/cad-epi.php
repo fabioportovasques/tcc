@@ -160,10 +160,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -283,7 +280,7 @@
                                                                               
                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="#" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> <i class="glyphicon glyphicon-refresh"></i></a>                                                       
+                                                                                      <a class="btn  btn-light btn-block" href="#" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> <i class="glyphicon glyphicon-refresh"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
@@ -404,7 +401,7 @@
                                                                               
                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Consultar Venc. C.A" target="_blank"> Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                                      <a class="btn  btn-light btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Consultar Venc. C.A" target="_blank"> Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>                                                       
                                                                                     </div>
 
                                                                                          

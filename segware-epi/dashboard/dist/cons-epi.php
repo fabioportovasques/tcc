@@ -159,10 +159,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -282,9 +279,9 @@
                                   <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
                                                                         
                                                                               
-                                                                                   <div class="item5">
+                                                                                   <div class="item2">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="#" data-toggle="tooltip"  title="Pesquise Aqui"><i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                                      <a class="btn  btn-light btn-block" href="#" data-toggle="tooltip"  title="Pesquise Aqui"><i class="glyphicon glyphicon-search"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
@@ -401,9 +398,9 @@
                                           <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
                                                                                 
-                                                                                    <div class="item3">
+                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="#" data-toggle="tooltip"  title="vc será redirecionado ao site do ministério do trabalho">Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>        
+                                                                                      <a class="btn  btn-light btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" target="blank" data-toggle="tooltip"  title="vc será redirecionado ao site do ministério do trabalho">Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>        
                                                                                     </div>                                                 
                                         <!--Fim da coluna-->           </div>
 

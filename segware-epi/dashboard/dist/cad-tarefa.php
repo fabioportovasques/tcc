@@ -12,6 +12,8 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Icones-->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
@@ -134,10 +136,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                     <a class="nav-link collapsed" href="cons-fabricante.php">
-                                        Fabricante 
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
+                                   
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -413,6 +412,7 @@
                                                                                         <label for="cidade">Adicionar Colaboradores</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                              <input type="text" name="matricula-func" id="matricula-func" class="form-control "  required="" data-toggle="tooltip" data-placement="right" title="Insira a Matricula do colaborador">
+
                                                                                     </div>
                                                                                 </div>
 
@@ -423,13 +423,13 @@
                                            <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
                                                                               
-                                                                                   <div class="item">
+                                                                                   <div class="item6">
 
-                                                                                      <a class="btn  btn-success btn-block glyphicon glyphicon-plus" href="#" data-toggle="tooltip"  title="Add Colaborador" target="_blank"><i class="glyphicon glyphicon-add"></i></a>                                                       
+                                                                                      <a class="btn  btn-light  glyphicon glyphicon-plus" href="#" data-toggle="tooltip"  title="Add Colaborador" target="_blank"><i class="glyphicon glyphicon-add"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
-                                <!--Fim da coluna-->                      </div>
+                                        <!--Fim da coluna-->                      </div>
 
 
                                           <!--Início da coluna-->    <div class="marcador1 col-sm-6">
