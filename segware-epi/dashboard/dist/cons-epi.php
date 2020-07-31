@@ -14,6 +14,9 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
+           <!--Link para icones-->
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
        
         <script>
@@ -256,7 +259,7 @@
                                             <br />
                                             
 
-                                           <h4 class="text-center">Consulta de E.P.IS</h4><br />
+                                           <h2 class="text-center">Consultar E.P.IS</h2><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-3">
@@ -279,9 +282,9 @@
                                   <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
                                                                         
                                                                               
-                                                                                   <div class="item">
+                                                                                   <div class="item5">
 
-                                                                                      <a class="btn  btn-success btn-block" href="#" data-toggle="tooltip"  title="Pesquise Aqui">...</a>                                                       
+                                                                                      <a class="btn  btn-dark btn-block" href="#" data-toggle="tooltip"  title="Pesquise Aqui"><i class="glyphicon glyphicon-search"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
@@ -400,7 +403,7 @@
                                                                                 
                                                                                     <div class="item3">
 
-                                                                                      <a class="btn  btn-success btn-block" href="#" data-toggle="tooltip"  title="vc será redirecionado ao site do ministério do trabalho">Venc. C.A</a>        
+                                                                                      <a class="btn  btn-dark btn-block" href="#" data-toggle="tooltip"  title="vc será redirecionado ao site do ministério do trabalho">Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>        
                                                                                     </div>                                                 
                                         <!--Fim da coluna-->           </div>
 

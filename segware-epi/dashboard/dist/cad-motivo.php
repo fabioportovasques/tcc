@@ -237,20 +237,21 @@
                                            <h4 class="text-center">Cadastro De Motivos</h4><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-6">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Código Motivo</label>
+                                                                                         <span class="campo-obrigatorio"></span>
                                                                                         <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-6">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">

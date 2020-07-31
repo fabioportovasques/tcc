@@ -14,6 +14,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+        <!--Link para icones-->
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
         <script>
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();   
@@ -237,7 +242,7 @@
                                         <br />
                                         <br />
 
-                                           <h4 class="text-center">Consultar Departamentos</h4><br />
+                                           <h2 class="text-center">Consultar Departamentos</h2><br />
                 <!--Início da linha-->     <div class="row" >
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-4">
@@ -273,9 +278,9 @@
                                  <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
                                                                                 
-                                                                                    <div class="item">
+                                                                                    <div class="item5">
 
-                                                                                      <a class="btn  btn-success btn-block" href="#">Pesquisar</a>                                                       
+                                                                                      <a class="btn  btn-dark btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a>                                                       
                                    <!--Fim da coluna-->           </div>
                                                                                 
 
@@ -327,7 +332,9 @@
                                                                         <button class="btn btn-success btn-block" type="submit">Alterar Departamento</button>
                                  <!--Fim da coluna-->       </div>
 
-                                 
+                                 <!--Início da coluna-->     <div class="bot1 col-md-3">
+                                                                        <button class="btn btn-success btn-block" type="submit">Excluir Departamento</button>
+                                 <!--Fim da coluna-->       </div>
                                                                         
 
                 <!--Fechamento da linha-->  </div>

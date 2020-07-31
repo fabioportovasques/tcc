@@ -13,6 +13,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+            <!--Link para icines-->
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
      <script>
         $(document).ready(function(){
@@ -231,28 +234,40 @@
                                             <br />
                                             
 
-                                           <h4 class="text-center">Consultar  Funcionários</h4><br />
+                                           <h2 class="text-center">Consultar  Funcionários</h2><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-3">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Matricula Funcionário</label>
+                                                                                         <span class="campo-obrigatorio"></span>
                                                                                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                                                                                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                                                                                         </svg>
-                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " placeholder="Insira a matricula" required="" data-toggle="tooltip" data-placement="top" title="Insira a Matricula a ser Pesquisada" >    
-                                                                                          <a class="btn btn-success " btn-sm href="#">Pesquisar </a>
+                                                                                        <input type="text" name="matricula-func" id="matricula-func" class="form-control " placeholder="Insira a matricula" required="" data-toggle="tooltip" data-placement="top" title="Consultar Matricula" >    
                                                                                     </div>
                                                                                 </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-md">
+
+                                  <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
+                                                                        
+                                                                              
+                                                                                   <div class="item">
+
+                                                                                      <a class="btn  btn-dark btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Clique para Consultar a Matricula" target="_blank"> <i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                                    </div>
+
+                                                                                         
+                                  <!--Fim da coluna-->         </div>
+
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
@@ -267,11 +282,11 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                         
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > CPF</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="cpf-func" id="cpf-func" class="form-control" placeholder="CPF"  autocomplete="off" required="" >    
@@ -292,10 +307,10 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
 
                                                                              <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > RG</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="rg-func" id="rg-func" class="form-control " placeholder="RG" autocomplete="off" required="" >    
@@ -304,10 +319,10 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Idade</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="number" name="idade-func" id="idade-func" class="form-control" placeholder="Idade"  autocomplete="off" required="" >    
@@ -317,11 +332,11 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Data de Nascimento</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="date" name="data-nascimento-func" id="data-nascimento-func" class="form-control " placeholder="Data de Nascimento" required="" >    
@@ -339,10 +354,10 @@
                        <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
 
                                                                              <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Nacionalidade</label>
                                                                                         <input type="text" name="nacionalidade-func" id="nacionalidade-func" class="form-control " placeholder="Nacinalidade" autocomplete="off" >    
                                                                                     </div>
@@ -350,10 +365,10 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                          <label > Sexo</label><br />
                                                                                         <label > Masculino</label>
                                                                                         <input class="form-comtrol" type="radio" name="sexo-func" id="exampleRadios1" value="option1"> 
@@ -365,11 +380,11 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Celular</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="celular-func" id="celular-func" class="form-control " autocomplete="off" required="" >    
@@ -388,10 +403,10 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
 
                                                                              <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label for="cidade">Cidade</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="cidade-func" name="cidade-func" required="">
@@ -405,10 +420,10 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Número da Rua</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off" required="" >    
@@ -419,11 +434,11 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label for="cidade">UF</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="cidade-func" name="cidade-func">
@@ -445,10 +460,10 @@
                   <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-4">
 
                                                                              <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label for="cidade">Departamento</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="dep-func" name="dep-func">
@@ -462,10 +477,10 @@
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-md">
+                                         <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Bairro</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="bairro" id="bairro" class="form-control "  required="" autocomplete="off" placeholder="bairro">    
@@ -476,11 +491,11 @@
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-md">
+                                          <!--Início da coluna-->    <div class="marcador1 col-md-4">
 
 
                                                                         <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label for="cidade">Status</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                             <select class="form-control" id="status-func" name="status-func">
@@ -562,8 +577,11 @@
                                                                         <button class="btn btn-success btn-block" type="submit">Alterar</button>
                                  <!--Fim da coluna-->       </div>
 
+                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                        <button class="btn btn-success btn-block" type="submit">Excluir</button>
+                                 <!--Fim da coluna-->       </div>
 
-
+                                                            </form>
                 <!--Fechamento da linha-->  </div>
 
 

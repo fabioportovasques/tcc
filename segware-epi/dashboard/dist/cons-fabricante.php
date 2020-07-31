@@ -15,6 +15,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
+         <!--Link para icones-->
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
         <script>
                 $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip();   
@@ -239,7 +244,7 @@
                                         <br />
                                         <br />
 
-                                           <h4 class="text-center">Consultar Fabricante</h4><br />
+                                           <h2 class="text-center">Consultar Fabricante</h2><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-6">
@@ -275,8 +280,8 @@
                                 <!--Fim da coluna-->             </div>
 
                                    <!--Início da coluna-->          <div class="col-md-2 flex-row-reverse">
-                                                                         <div class="item">
-                                                                                        <a class="btn  btn-success btn-block" href="#">Pesquisar</a> 
+                                                                         <div class="item5">
+                                                                                        <a class="btn  btn-dark btn-block" href="#"><i class="glyphicon glyphicon-search"></i></a> 
                                                                         </div>
                                                                                     
 
@@ -337,7 +342,9 @@
                                                                         <button class="btn btn-success btn-block" type="submit">Alterar Fabricante</button>
                                  <!--Fim da coluna-->       </div>
 
-                              
+                               <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                        <button class="btn btn-success btn-block" type="submit">Excluir Fabricante</button>
+                                 <!--Fim da coluna-->       </div>
 
                 <!--Fechamento da linha-->  </div>
 

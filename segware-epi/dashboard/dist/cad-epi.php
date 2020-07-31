@@ -260,7 +260,7 @@
                                             <br />
                                             
 
-                                           <h2 class="text-center">Cadastro de E.P.IS</h2><br />
+                                           <h2 class="text-center">Cadastrar  E.P.IS</h2><br />
                 <!--Início da linha-->     <div class="row">
 
                                 <!--Início da coluna-->          <div class="marcador1 col-md-3">
@@ -346,11 +346,12 @@
                                                                                     <div class="   col">
                                                                                         <label > Fabricante</label>
                                                                                          <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="fabricante-epi" name="fabricante-func">
+                                                                                        <select class="form-control" id="fabricante-epi" name="fabricante-func" required="">
+                                                                                                <option></option>
                                                                                                 <option>Fujwara</option>
                                                                                                 <option>prometal</option>
                                                                                                 <option>MSA</option>
-                                                                                                <option>...</option>
+                                                                                                
                                                                                             </select>                                                                                    
                                                                                     </div>
                                                                                 </div>
@@ -365,11 +366,12 @@
                                                                                     <div class="   col">
                                                                                         <label > Fornecedor</label>
                                                                                          <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="fornecedor-epi" name="fornecedor-epi">
+                                                                                        <select class="form-control" id="fornecedor-epi" name="fornecedor-epi" required="">
+                                                                                                <option></option>
                                                                                                 <option>Fujwara</option>
                                                                                                 <option>prometal</option>
                                                                                                 <option>MSA</option>
-                                                                                                <option>...</option>
+                                                                                                
                                                                                             </select>                                                                                         </div>
                                                                                 </div>
 
@@ -384,25 +386,25 @@
                        <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-md-3">
+                                        <!--Início da coluna-->     <div class="marcador1 col-md-2">
 
                                                                              <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > C.A</label>
                                                                                          <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A" autocomplete="off" required="" >    
+                                                                                        <input type="number" name="ca-epi" id="ca-epi" class="form-control " placeholder="Insira o C.A" autocomplete="off" required="" >    
                                                                                            
                                                                                     </div>
                                                                             </div>
 
                                          <!--Fim da coluna-->       </div>
 
-                                           <!--Início da coluna-->         <div class="col-md-1 flex-row-reverse">
+                                           <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
                                                                         
                                                                               
                                                                                    <div class="item">
 
-                                                                                      <a class="btn  btn-dark btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Consultar Venc. C.A" target="_blank"> <i class="glyphicon glyphicon-search"></i></a>                                                       
+                                                                                      <a class="btn  btn-dark btn-block" href="http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx" data-toggle="tooltip"  title="Consultar Venc. C.A" target="_blank"> Consultar Venc. C.A <i class="glyphicon glyphicon-search"></i></a>                                                       
                                                                                     </div>
 
                                                                                          
@@ -429,11 +431,11 @@
                                                                                     <div class="   col">
                                                                                         <label > Situação</label>
                                                                                          <span class="campo-obrigatorio">*</span>
-                                                                                        <select class="form-control" id="situacao-epi" name="situacao-epi">
+                                                                                        <select class="form-control" id="situacao-epi" name="situacao-epi" required="">
+                                                                                                <option></option>
                                                                                                 <option>Emprestado</option>
                                                                                                 <option>Em Estoque</option>
-                                                                                                <option>...</option>
-                                                                                            </select>  
+                                                                                        </select>  
                                                                                     </div>
                                                                                 </div>
 
@@ -470,18 +472,22 @@
                 <!--Início da linha-->      <div class="row">
                                                    
 
+                                  <!--Início da coluna-->     <div class="bot1 col-md-3">
+                                                                    <a class="btn  btn-success btn-block" href="https://www.barcode-generator.de/V2/pt/index.jsp" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> Gerar Codigo de Barras</a>
+                                <!--Fim da coluna-->          </div>          
+
+                                   <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
+                                <!--Fim da coluna-->      </div> 
+
                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
                                                                         <button class="btn btn-success btn-block" type="submit">Cadastrar</button>
                                  <!--Fim da coluna-->       </div>
 
 
-                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
-                                <!--Fim da coluna-->      </div>       
+                                    
 
-                                 <!--Início da coluna-->     <div class="bot1 col-md-3">
-                                                                    <a class="btn  btn-success btn-block" href="https://www.barcode-generator.de/V2/pt/index.jsp" data-toggle="tooltip"  title="Gerar Codigo de Barras" target="_blank"> Gerar Codigo de Barras</a>
-                                <!--Fim da coluna-->         </div>                          
+                                                               
 
                 <!--Fechamento da linha-->  </div>
 
