@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -7,36 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Consultar Encarregado</title>
+        <title>Consultar Status  Tarefas</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <script>
+
+     <script>
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();   
         });
-        </script>
+    </script>   
 
-       
+   
 
 
     </head>
-
-
-
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">SEGWARE EPI</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                </div>
             </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
+
+    <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -98,7 +94,7 @@
                                     <a class="nav-link" href="cad-encarregado.php">Cadastro  Encarregados</a>
                                     <a class="nav-link" href="cad-fabricante.php">Cadastro  Fabricante</a>
                                     <a class="nav-link" href="cad-fornecedor.php">Cadastro  Fornecedores</a>
-                                    <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
+                                   <a class="nav-link" href="cad-motivo.php">Cadastro  Motivo</a>
                                     <a class="nav-link" href="cad-tst.php">Cadastro  TST</a>
                                     <a class="nav-link" href="cad-epi.php">Cadastro  E.P.IS</a>
                                 </nav>
@@ -120,7 +116,8 @@
 
 
 
-                         
+                           
+                          
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="cons-func.php">
@@ -135,7 +132,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                   
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -173,15 +170,15 @@
                                        
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                   </a>
-                             <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
-                                        <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
-                                        <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
-                                        <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
-                                       
-                                    </nav>
-                             </div>
+                                 <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
+                                            <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
+                                            <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
+                                            <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
+                                           
+                                        </nav>
+                                </div>
                                    
                                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
@@ -223,111 +220,92 @@
                 </nav>
         </div>
             <!--conteudo do meio -->
-                           
 
            
    <!--Início container--> <div class="container marcador-container1">
 
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            
 
-                                           <h4 class="text-center">Consultar Encarregado</h4><br />
-                <!--Início da linha-->     <div class="row">
+                                           <h2 class="text-center">Consultar Tarefas Pendentes</h2><br />
+    <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-3">
                                                                        
-                                                                            <form action=""  method="POST" name="cad-func" > 
-
-                                                                                <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label > Código Encarregado</label>
-                                                                                        <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
-                                                                                    </div>
-                                                                                </div>
+                                                                        <div class="card bg-danger text-white mb-2">
+                                                                          <div class="card-header">
+                                                                            Tarefas Pendentes
+                                                                          </div>
+                                                                          <div class="card-body">
+                                                                            <h4 class="card-title">Subir em Altura</h4>
+                                                                            <h6 class="card-subtitle"></h6>
+                                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+                                                                            <a class="btn btn-outline-light" href="">Editar Tarefa</a>
+                                                                          </div>
+                                                                        </div>
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcador1 col-md-6">
-                                                                        
-                                                                                <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label > Pesquisar Encarregado</label>
-                                                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                                                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                                                                        </svg>
-                                                                                        <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Nome Encarregado"  data-toggle="tooltip" data-placement="top" title="Insira o nome do Encarregado" autocomplete="off" required="" >    
-                                                                                       
-                                                                                    </div>
+              
+
+                <!--Início da coluna-->          <div class="marcador1 col-md-3">
+                                                                       
+                                                                         
+                                                                               <div class="card bg-danger text-white mb-2">
+                                                                                      <div class="card-header">
+                                                                                        Tarefas Pendentes
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                        <h4 class="card-title">Espaço Confinado</h4>
+                                                                                        <h6 class="card-subtitle"></h6>
+                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+                                                                                        <a class="btn btn-outline-light" href="">Editar Tarefa</a>
+                                                                                      </div>
                                                                                 </div>
 
+                 <!--Fim da coluna-->            </div>
 
-                                <!--Fim da coluna-->             </div>
-                                                                    
-
-                                 <!--Início da coluna-->         <div class="col-md-2 flex-row-reverse">
-                                                                        
-                                                                              
-                                                                                    <div class="item">
-                                                                                        <a class="btn  btn-success btn-block" href="#">Pesquisar</a> 
-                                                                                    </div>
-                                                                              
-
-                                                                                         
-                                  <!--Fim da coluna-->         </div>
-
-
-
-                <!--Fechamento da linha-->  </div>                                     
                 
+                                  <!--Início da coluna-->          <div class="marcador1 col-md-3">
+                                                                       
+                                                                           
+                                                                                <div class="card bg-danger text-white mb-2">
+                                                                                      <div class="card-header">
+                                                                                        Tarefas Pendentes
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                        <h4 class="card-title">Escavação Subsólo</h4>
+                                                                                        <h6 class="card-subtitle"></h6>
+                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+                                                                                        <a class="btn btn-outline-light" href="">Editar Tarefa</a>
+                                                                                      </div>
+                                                                                    </div>
+                                 <!--Fim da coluna-->            </div>
+
+                                  <!--Início da coluna-->          <div class="marcador1 col-md-3">
+                                                                       
+                                                                           
+                                                                                <div class="card bg-danger text-white mb-2">
+                                                                                      <div class="card-header">
+                                                                                        Tarefas Pendentes
+                                                                                      </div>
+                                                                                      <div class="card-body">
+                                                                                        <h4 class="card-title">Manusear Produto Químico</h4>
+                                                                                        <h6 class="card-subtitle"></h6>
+                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis i, feugiat et lorem quis.</p>
+                                                                                        <a class="btn btn-outline-light" href="">Editar Tarefa</a>
+                                                                                      </div>
+                                                                                    </div>
+                                 <!--Fim da coluna-->            </div>
 
 
-
-                 <!--Início da linha-->      <div class="row">
-                                                   
-
-                                <!--Início da coluna-->     <div class="bot1 col-md-12">
-                                                                <input type="text" name="nome-dep" id="nome-dep" class="form-control" placeholder="Resultado da Pesquisa"  data-toggle="tooltip" data-placement="top" title="Resultado Retornado" autocomplete="off">
-                                 <!--Fim da coluna-->       </div>
-
-                                 
-                                                                        
-
-                <!--Fechamento da linha-->  </div>
-    
-
-
-
-
-
-                                                                                    
-
-
-                                
-
-
-
-
-               
-
-
-
+                                 <!--Fechamento da linha--> </div>
                 <br />
 
-                <!--Início da linha-->      <div class="row">
-                                                   
-
-                                <!--Início da coluna-->     <div class="bot1 col-md-3">
-                                                                        <button class="btn btn-success btn-block" type="submit">Alterar Encarregado</button>
-                                 <!--Fim da coluna-->       </div>
-
-                                 
-                                                                        
-
-                <!--Fechamento da linha-->  </div>
+              
 
 
 
@@ -338,8 +316,14 @@
 
 
 
+   <!--Fechamento container--> </div>           
 
 
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>

@@ -175,15 +175,16 @@
                                        
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                   </a>
-                            <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Cadastrar Tarefas</a>
-                                    <a class="nav-link" href="cad-dep.php">Editar Tarefa</a>
-                                    <a class="nav-link" href="cad-encarregado.php">Consultar Status Tarefa</a>
-                                    <a class="nav-link" href="cad-fabricante.php">Consultar Tarefas Pendentes</a>
-                                   
-                                </nav>
-                            </div>
+                                
+                                 <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
+                                            <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
+                                            <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
+                                            <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
+                                           
+                                        </nav>
+                                </div>
                                    
                                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
@@ -246,6 +247,7 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Código do Fabricante</label>
+                                                                                        <span class="campo-obrigatorio"></span>
                                                                                         <input type="text" name="cod-fabricante" id="cod-fabricante" class="form-control " disabled="" >    
                                                                                     </div>
                                                                                 </div>

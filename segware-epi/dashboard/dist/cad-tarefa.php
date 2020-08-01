@@ -6,17 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cadastrto de tarefas</title>
+        <title>ADD Tarefas</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!--Icones-->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
      <script>
         $(document).ready(function(){
@@ -136,7 +132,7 @@
                                         Encarregado
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                   
+                                    
                                      <a class="nav-link collapsed" href="cons-fornecedor.php">
                                         Fornecedor
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -174,15 +170,15 @@
                                        
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                   </a>
-                            <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Cadastrar Tarefas</a>
-                                    <a class="nav-link" href="cad-dep.php">Editar Tarefa</a>
-                                    <a class="nav-link" href="cad-encarregado.php">Consultar Status Tarefa</a>
-                                    <a class="nav-link" href="cad-fabricante.php">Consultar Tarefas Pendentes</a>
-                                   
-                                </nav>
-                            </div>
+                                 <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
+                                            <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
+                                            <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
+                                            <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
+                                           
+                                        </nav>
+                                </div>
                                    
                                  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
@@ -237,13 +233,13 @@
                                            <h2 class="text-center">Adicionar Tarefas</h2><br />
                 <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-sm-4">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                        
                                                                             <form action=""  method="POST" name="cad-func" > 
 
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
-                                                                                        <label > Matricula do Encarregado</label>
+                                                                                        <label > Matric Encarregado</label>
                                                                                            <span class="campo-obrigatorio">*</span>
                                                                                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                                                             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -255,11 +251,11 @@
 
                                  <!--Fim da coluna-->            </div>
 
-                                 <!--Início da coluna-->         <div class="marcado1r col-sm-4">
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
                                                                         
                                                                                 <div class="form-group">
-                                                                                    <div class="scol">
-                                                                                        <label > Nome Responsável Tarefa</label>
+                                                                                    <div class="col">
+                                                                                        <label > Responsável Tarefa</label>
                                                                                           <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="nome-tarefa" id="nome-func" class="form-control" placeholder="Responsável Pela Tarefa" autocomplete="off" required="" >    
 
@@ -270,11 +266,11 @@
                                 <!--Fim da coluna-->             </div>
                                                                     
 
-                                <!--Início da coluna-->          <div class="marcador1 col-sm-4">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                         
 
                                                                               <div class="form-group">
-                                                                                    <div class="   col">
+                                                                                    <div class="col">
                                                                                         <label > Nome da Tarefa</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="nome-tarefa" id="nome-tarefa" class="form-control" placeholder="Nome da  Tarefa"  autocomplete="off" required="" >    
@@ -295,40 +291,40 @@
                  <!--Início da linha-->      <div class="row">
                                                    
 
-                                        <!--Início da coluna-->     <div class="marcador1 col-sm-4">
+                                        <!--Início da coluna-->     <div class="col-md-4">
 
-                                                                             <div class="form-group">
-                                                                                    <div class="   col">
-                                                                                        <label > Número de executantes da Tarefa</label>
+                                                                            <div class="form-group">
+                                                                                    <div class="col">
+                                                                                        <label > Número executantes</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="number" name="numero-executante" id="numero-executante" class="form-control " placeholder="Número de executantes" autocomplete="off" required="" data-toggle="tooltip" data-placement="right" title="Quantas Pessoas Executarão a Tarefa">    
                                                                                     </div>
-                                                                                </div>
+                                                                            </div>
 
                                          <!--Fim da coluna-->       </div>
 
-                                         <!--Início da coluna-->    <div class="marcador1 col-sm-4">
+                                         <!--Início da coluna-->    <div class="col-md-4">
 
-                                                                              <div class="form-group">
-                                                                                    <div class="   col">
+                                                                            <div class="form-group">
+                                                                                 <div class="col">
                                                                                         <label >Local de Execução</label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                         <input type="text" name="local-tarefa" id="local-tarefa" class="form-control" placeholder="Local Tarefa"  autocomplete="off" required="" >    
-                                                                                    </div>
-                                                                                </div>
+                                                                                 </div>   
+                                                                            </div>
 
                                         <!--Fim da coluna-->        </div>
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-sm-4">
+                                          <!--Início da coluna-->    <div class="col-md-4">
 
 
-                                                                        <div class="form-group">
-                                                                                    <div class="col">
-                                                                                        <label > Descrição da Tarefa</label>
-                                                                                        <span class="campo-obrigatorio">*</span>
-                                                                                        <textarea col="2" class="form-control " name="desc-tarefa" id="desc-tarefa" required="" placeholder="ex: Equipe Necessita subir no predio da área (B) para trocar lampadas"></textarea>
-                                                                                    </div>
+                                                                                <div class="form-group">
+                                                                                            <div class="col">
+                                                                                                <label > Descrição da Tarefa</label>
+                                                                                                <span class="campo-obrigatorio">*</span>
+                                                                                                <textarea col="2" class="form-control" name="desc-tarefa" id="desc-tarefa" required="" placeholder="ex: Equipe Necessita subir no predio da área (B) para trocar lampadas"></textarea>
+                                                                                            </div>
                                                                                 </div>
 
                                             
@@ -410,7 +406,7 @@
 
                                                                              <div class="form-group">
                                                                                     <div class="col">
-                                                                                        <label>Adicionar Colaboradores</label>
+                                                                                        <label>ADD </label>
                                                                                         <span class="campo-obrigatorio">*</span>
                                                                                              <input type="text" name="matricula-func" id="matricula-func" class="form-control "  required="" data-toggle="tooltip" data-placement="right" title="Insira a Matricula do colaborador">
 
@@ -443,7 +439,8 @@
                 <!--Fechamento da linha-->  </div>  
 
                 <div class="row">
-                    <div class="col-sm-12">
+
+                <div class="col-sm-12">
 
                             <?php 
                                 include('tabela-grid.php');
@@ -485,6 +482,7 @@
 
 
 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>

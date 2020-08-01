@@ -174,10 +174,10 @@
                                   </a>
                             <div class="collapse" id="collapseTarefas" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Cadastrar Tarefas</a>
-                                    <a class="nav-link" href="cad-dep.php">Editar Tarefa</a>
-                                    <a class="nav-link" href="cad-encarregado.php">Consultar Status Tarefa</a>
-                                    <a class="nav-link" href="cad-fabricante.php">Consultar Tarefas Pendentes</a>
+                                    <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
+                                    <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
+                                    <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
+                                    <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
                                    
                                 </nav>
                             </div>
@@ -243,6 +243,7 @@
                                                                                 <div class="form-group">
                                                                                     <div class="   col">
                                                                                         <label > Código Departamento</label>
+                                                                                        <span class="campo-obrigatorio"></span>
                                                                                         <input type="text" name="cod-dep" id="cod-dep" class="form-control " disabled="" required="" >    
                                                                                     </div>
                                                                                 </div>
