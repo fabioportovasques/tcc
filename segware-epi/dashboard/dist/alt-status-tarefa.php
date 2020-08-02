@@ -69,7 +69,7 @@
                 </li>
             </ul>
         </nav>
-        
+
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -176,7 +176,7 @@
                                             <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
                                             <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
                                             <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
-                                            <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
+                                            
                                            
                                         </nav>
                                 </div>
@@ -408,7 +408,7 @@
 
 
 
-                                          <!--Início da coluna-->    <div class="marcador1 col-sm-12">
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-6">
                                                                                             <div class="form-group">
                                                                                                 <div class="col">                                                                                            
                                                                                                     <label>Status</label>
@@ -425,6 +425,17 @@
                                             
                                         <!--Fim da coluna-->        </div>
                                                                             
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-6">
+                                                                                            <div class="form-group">
+                                                                                                <div class="col">                                                                                            
+                                                                                                    <label>OBS</label>
+                                                                                                    <textarea class="form-control" cols="2" data-toggle="tooltip" data-placement="top" title="Se Reprovar a Tarefa, favor inserir uma OBS"></textarea>
+                                                                                                </div>    
+                                                                                                
+                                                                                            </div>
+                                                                                
+                                            
+                                        <!--Fim da coluna-->        </div>                                                                              
 
                 <!--Fechamento da linha-->  </div>  
 

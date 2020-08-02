@@ -23,7 +23,7 @@
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">SEGWARE EPI</a>
+            <a class="navbar-brand" href="#">SEGWARE EPI</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -171,7 +171,6 @@
                                     <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
                                     <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
                                     <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
-                                    <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
                                    
                                 </nav>
                             </div>

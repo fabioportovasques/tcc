@@ -26,7 +26,7 @@
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Módulo TST</a>
+            <a class="navbar-brand" href="#">Módulo TST</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -175,7 +175,6 @@
                                             <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
                                             <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
                                             <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
-                                            <a class="nav-link" href="cons-tarefa-pendente.php">Consultar Tarefas Pendentes</a><!-- Módulo TST-->
                                            
                                         </nav>
                                 </div>
@@ -237,7 +236,7 @@
                                                                        
                                                                         <div class="card bg-warning text-white mb-2">
                                                                           <div class="card-header">
-                                                                            Tarefas Pendentes
+                                                                            Tarefas Em Análise
                                                                           </div>
                                                                           <div class="card-body">
                                                                             <h4 class="card-title">Subir em Altura</h4>
@@ -256,7 +255,7 @@
                                                                          
                                                                                <div class="card bg-warning text-white mb-2">
                                                                                       <div class="card-header">
-                                                                                        Tarefas Pendentes
+                                                                                        Tarefas Em Análise
                                                                                       </div>
                                                                                       <div class="card-body">
                                                                                         <h4 class="card-title">Espaço Confinado</h4>
@@ -272,9 +271,9 @@
                                   <!--Início da coluna-->          <div class="marcador1 col-md-3">
                                                                        
                                                                            
-                                                                                <div class="card bg-warning text-white mb-2">
+                                                                                <div class="card bg-danger text-white mb-2">
                                                                                       <div class="card-header">
-                                                                                        Tarefas Pendentes
+                                                                                        Tarefas Reprovadas
                                                                                       </div>
                                                                                       <div class="card-body">
                                                                                         <h4 class="card-title">Escavação Subsólo</h4>
@@ -288,9 +287,9 @@
                                   <!--Início da coluna-->          <div class="marcador1 col-md-3">
                                                                        
                                                                            
-                                                                                <div class="card bg-warning text-white mb-2">
+                                                                                <div class="card bg-success text-white mb-2">
                                                                                       <div class="card-header">
-                                                                                        Tarefas Pendentes
+                                                                                        Tarefa Aprovada
                                                                                       </div>
                                                                                       <div class="card-body">
                                                                                         <h4 class="card-title">Manusear Produto Químico</h4>
@@ -304,12 +303,42 @@
 
                                  <!--Fechamento da linha--> </div>
                 <br />
+                <br />
+                <br />
 
               
-
-
-
-
+                <div class="row">
+                      <div class="col-sm-1 legend">
+                            <div style="background-color: #008000; border: 1px solid #008000; color: #008000">
+                                 A
+                            </div>
+                        </div>
+                        <div class="col-sm-2 legend">
+                                <span>Aprovado</span>
+                        </div>
+                </div>
+                    <br />
+                 <div class="row">
+                      <div class="col-sm-1 legend">
+                            <div style="background-color: red; border: 1px solid red; color: red">
+                                 R
+                            </div>
+                        </div>
+                        <div class="col-sm-2 legend">
+                                <span>Reprovado</span>
+                        </div>
+                </div>               
+                    <br />
+                 <div class="row">
+                      <div class="col-sm-1 legend">
+                            <div style="background-color:   #FFA500; border: 1px solid #    #FFA500; color:#FFA500">
+                                 A
+                            </div>
+                        </div>
+                        <div class="col-sm-3 legend">
+                                <span>Em Análise</span>
+                        </div>
+                </div>
 
 
 
