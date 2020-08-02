@@ -39,9 +39,9 @@ $(document).ready(function(){
 -->
 
 
-
+<!--
  
-<table class="table table-bordered">
+<table class="table table-sm">
   <thead>
     <tr>
       <th scope="col">Matricula</th>
@@ -75,7 +75,44 @@ $(document).ready(function(){
   </tbody>
 </table>
 
+-->
 
+<table class="table table-sm">
+      <thead>
+        <tr>
+          <th>Matricula</th>
+          <th>Nome</th>
+          <th>Departamento</th>
+          <th>Função</th>
+        </tr>
+      </thead>
+
+      <tr>
+          <td>151589</td>
+          <td>Fábio G. Porto Vasques</td>
+          <td>T.I</td>
+          <td>técnico em informática</td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        </tr>
+
+        <tr>
+          <td>141</td>
+          <td>Natcheli Vasques</td>
+          <td>Gestão de Projetos</td>
+          <td>Assistente Social</td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        </tr>
+
+         <tr>
+          <td>45569</td>
+          <td>Fulano de Tal</td>
+          <td>Manutenção</td>
+          <td>Mecânico</td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        </tr>
+</table>  
+
+      
 
 </body>
 </html>

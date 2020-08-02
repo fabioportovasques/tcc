@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Consultar Status  Tarefas</title>
+        <title>Alterar Status Tarefas</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="css/styles.css" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -26,7 +26,7 @@
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Módulo TST</a>
+            <a class="navbar-brand" href="#">Módulo TST </a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -69,6 +69,7 @@
                 </li>
             </ul>
         </nav>
+        
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -230,82 +231,228 @@
                                             <br />
                                             
 
-                                           <h2 class="text-center">Consultar Tarefas Pendentes</h2><br />
-    <!--Início da linha-->     <div class="row">
+                                           <h2 class="text-center">Alterar Status Tarefas</h2><br />
+                <!--Início da linha-->     <div class="row">
 
-                                <!--Início da coluna-->          <div class="marcador1 col-md-3">
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
                                                                        
-                                                                        <div class="card bg-warning text-white mb-2">
-                                                                          <div class="card-header">
-                                                                            Tarefas Pendentes
-                                                                          </div>
-                                                                          <div class="card-body">
-                                                                            <h4 class="card-title">Subir em Altura</h4>
-                                                                            <h6 class="card-subtitle"></h6>
-                                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-                                                                            <a class="btn btn-outline-light" href="alt-status-tarefa.php">Editar Tarefa</a>
-                                                                          </div>
-                                                                        </div>
+                                                                            <form action=""  method="POST" name="cad-func" > 
 
-                                 <!--Fim da coluna-->            </div>
-
-              
-
-                <!--Início da coluna-->          <div class="marcador1 col-md-3">
-                                                                       
-                                                                         
-                                                                               <div class="card bg-warning text-white mb-2">
-                                                                                      <div class="card-header">
-                                                                                        Tarefas Pendentes
-                                                                                      </div>
-                                                                                      <div class="card-body">
-                                                                                        <h4 class="card-title">Espaço Confinado</h4>
-                                                                                        <h6 class="card-subtitle"></h6>
-                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-                                                                                        <a class="btn btn-outline-light" href="alt-status-tarefa.php">Editar Tarefa</a>
-                                                                                      </div>
+                                                                                <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label > Matric Encarregado</label>
+                                                                                           <span class="campo-obrigatorio">*</span>
+                                                                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                                        </svg>
+                                                                                        <input type="number" name="matricula-func" id="matricula-func" class="form-control "  required="" disabled="" data-toggle="tooltip" data-placement="top" title="Insira a Matricula do Encarregado">    
+                                                                                    </div>
                                                                                 </div>
 
-                 <!--Fim da coluna-->            </div>
-
-                
-                                  <!--Início da coluna-->          <div class="marcador1 col-md-3">
-                                                                       
-                                                                           
-                                                                                <div class="card bg-warning text-white mb-2">
-                                                                                      <div class="card-header">
-                                                                                        Tarefas Pendentes
-                                                                                      </div>
-                                                                                      <div class="card-body">
-                                                                                        <h4 class="card-title">Escavação Subsólo</h4>
-                                                                                        <h6 class="card-subtitle"></h6>
-                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-                                                                                        <a class="btn btn-outline-light" href="alt-status-tarefa.php">Editar Tarefa</a>
-                                                                                      </div>
-                                                                                    </div>
                                  <!--Fim da coluna-->            </div>
 
-                                  <!--Início da coluna-->          <div class="marcador1 col-md-3">
-                                                                       
-                                                                           
-                                                                                <div class="card bg-warning text-white mb-2">
-                                                                                      <div class="card-header">
-                                                                                        Tarefas Pendentes
-                                                                                      </div>
-                                                                                      <div class="card-body">
-                                                                                        <h4 class="card-title">Manusear Produto Químico</h4>
-                                                                                        <h6 class="card-subtitle"></h6>
-                                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis i, feugiat et lorem quis.</p>
-                                                                                        <a class="btn btn-outline-light" href="alt-status-tarefa.php">Editar Tarefa</a>
-                                                                                      </div>
+                                 <!--Início da coluna-->         <div class="marcado1r col-md-4">
+                                                                        
+                                                                                <div class="form-group">
+                                                                                    <div class="col">
+                                                                                        <label > Responsável Tarefa</label>
+                                                                                          <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-tarefa" id="nome-func" class="form-control" placeholder="Responsável Pela Tarefa" autocomplete="off" required="" disabled="">    
+
                                                                                     </div>
-                                 <!--Fim da coluna-->            </div>
+                                                                                </div>
 
 
-                                 <!--Fechamento da linha--> </div>
+                                <!--Fim da coluna-->             </div>
+                                                                    
+
+                                <!--Início da coluna-->          <div class="marcador1 col-md-4">
+                                                                        
+
+                                                                              <div class="form-group">
+                                                                                    <div class="col">
+                                                                                        <label > Nome da Tarefa</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="nome-tarefa" id="nome-tarefa" class="form-control" placeholder="Nome da  Tarefa"  autocomplete="off" required="" disabled="">    
+                                                                                    </div>
+                                                                                </div>
+
+
+
+
+
+                                <!--Fim da coluna-->             </div>
+
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="col-md-4">
+
+                                                                            <div class="form-group">
+                                                                                    <div class="col">
+                                                                                        <label > Número executantes</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="number" name="numero-executante" id="numero-executante" class="form-control " placeholder="Número de executantes" autocomplete="off" required="" disabled="" data-toggle="tooltip" data-placement="right" title="Quantas Pessoas Executarão a Tarefa" >    
+                                                                                    </div>
+                                                                            </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="col-md-4">
+
+                                                                            <div class="form-group">
+                                                                                 <div class="col">
+                                                                                        <label >Local de Execução</label>
+                                                                                        <span class="campo-obrigatorio">*</span>
+                                                                                        <input type="text" name="local-tarefa" id="local-tarefa" class="form-control" placeholder="Local Tarefa"  autocomplete="off" required="" disabled="" >    
+                                                                                 </div>   
+                                                                            </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          <!--Início da coluna-->    <div class="col-md-4">
+
+
+                                                                                <div class="form-group">
+                                                                                            <div class="col">
+                                                                                                <label > Descrição da Tarefa</label>
+                                                                                                <span class="campo-obrigatorio">*</span>
+                                                                                                <textarea col="2" class="form-control" name="desc-tarefa" id="desc-tarefa" required=""  disabled="" placeholder="ex: Equipe Necessita subir no predio da área (B) para trocar lampadas"></textarea>
+                                                                                            </div>
+                                                                                </div>
+
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+                       <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-6">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label >Data de Início</label>
+                                                                                        <input type="date" name="data-inicio-tarefa" id="data-inicio-tarefa" class="form-control " required="" disabled="" autocomplete="off" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-6">
+
+                                                                              <div class="form-group">
+                                                                                     <div class="   col">
+                                                                                        <label >Data Final</label>
+                                                                                        <input type="date" name="data-inicio-tarefa" id="data-inicio-tarefa" class="form-control " required="" disabled="" autocomplete="off" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+
+                                          
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+
+
+                 <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        <!--Início da coluna-->     <div class="marcador1 col-sm-6">
+
+                                                                             <div class="form-group">
+                                                                                    <div class="   col">
+                                                                                        <label >Hora de Início</label>
+                                                                                        <input type="time" name="hora-inicio-tarefa" id="hora-inicio-tarefa" class="form-control " required="" disabled="" autocomplete="off" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                         <!--Fim da coluna-->       </div>
+
+                                         <!--Início da coluna-->    <div class="marcador1 col-sm-6">
+
+                                                                              <div class="form-group">
+                                                                                     <div class="   col">
+                                                                                        <label >Hora Final</label>
+                                                                                        <input type="time" name="hora-final-tarefa" id="hora-final-tarefa" class="form-control " required="" disabled="" autocomplete="off" >    
+                                                                                    </div>
+                                                                                </div>
+
+                                        <!--Fim da coluna-->        </div>
+
+                                                                            
+
+                <!--Fechamento da linha-->  </div>
+
+
+                  <!--Início da linha-->      <div class="row">
+                                                   
+
+                                        
+                                         
+
+
+
+                                          <!--Início da coluna-->    <div class="marcador1 col-sm-12">
+                                                                                            <div class="form-group">
+                                                                                                <div class="col">                                                                                            
+                                                                                                    <label>Status</label>
+                                                                                                    <select class="form-control">
+                                                                                                        <option></option>
+                                                                                                        <option>Aprovado</option>
+                                                                                                        <option>Reprovado</option>
+                                                                                                        <option>Em Análise</option>
+                                                                                                    </select>
+                                                                                                </div>    
+                                                                                                
+                                                                                            </div>
+                                                                                
+                                            
+                                        <!--Fim da coluna-->        </div>
+                                                                            
+
+                <!--Fechamento da linha-->  </div>  
+
+                <div class="row">
+
+                <div class="col-md-12">
+
+                            <?php 
+                                include('tabela-grid.php');
+
+                            ?>
+
+                    </div>
+                </div>
+
                 <br />
 
-              
+                <!--Início da linha-->      <div class="row">
+                                                   
+
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                        <button class="btn btn-success btn-block" type="submit">Alterar Status</button>
+                                 <!--Fim da coluna-->       </div>
+
+
+                                                            
+
+                <!--Fechamento da linha-->  </div>
 
 
 
