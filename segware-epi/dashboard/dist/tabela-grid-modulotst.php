@@ -56,7 +56,6 @@ $(document).ready(function(){
           <td>Fábio G. Porto Vasques</td>
           <td>T.I</td>
           <td>técnico em informática</td>
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 
         <tr>
@@ -64,7 +63,6 @@ $(document).ready(function(){
           <td>Natcheli Vasques</td>
           <td>Gestão de Projetos</td>
           <td>Assistente Social</td>
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 
          <tr>
@@ -72,7 +70,6 @@ $(document).ready(function(){
           <td>Fulano de Tal</td>
           <td>Manutenção</td>
           <td>Mecânico</td>
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 </table>  
 

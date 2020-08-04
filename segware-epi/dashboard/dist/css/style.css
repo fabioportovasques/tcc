@@ -80,11 +80,7 @@
         margin-top: 10px;
         }
 
-        .legend{
-          width: 100px;
-          padding: 50px;
-        }
-
+        
        } 
 
 @media (min-width: 567px) {
@@ -142,11 +138,9 @@
         margin-top: 10px;
         } 
 
-        .legend{
-          width: 100px;
-           padding: 10px;
-        }
+        
           
-       }        
-
+              
+     
+    }
      

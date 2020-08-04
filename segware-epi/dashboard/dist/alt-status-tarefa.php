@@ -175,7 +175,7 @@
                                         <nav class="sb-sidenav-menu-nested nav">
                                             <a class="nav-link" href="cad-tarefa.php">Cadastrar Tarefas</a>
                                             <a class="nav-link" href="cons-tarefa.php">Editar Tarefa</a>
-                                            <a class="nav-link" href="cons-status-tarefa.php">Consultar Status Tarefa</a>
+                                            <a class="nav-link" href="cons-status-tarefa.php">Consultar  Tarefa</a>
                                             
                                            
                                         </nav>
@@ -444,7 +444,7 @@
                 <div class="col-md-12">
 
                             <?php 
-                                include('tabela-grid.php');
+                                include('tabela-grid-modulotst.php');
 
                             ?>
 
