@@ -406,7 +406,7 @@
                                                                                     <div class="   col">
                                                                                         <label > Número da Rua</label>
                                                                                         <span class="campo-obrigatorio">*</span>
-                                                                                        <input type="text" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off" required="" >    
+                                                                                        <input type="number" name="numero-rua-func" id="numero-rua-func" class="form-control " autocomplete="off" required="" >    
 
                                                                                     </div>
                                                                                 </div>
@@ -543,9 +543,34 @@
 
                                             
                                         <!--Fim da coluna-->        </div>
+
+                                      
                                                                             
 
                 <!--Fechamento da linha-->  </div>  
+
+    <!-- Início da linha --><div class="row">
+
+       <!-- Início da coluna -->                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <div class="col">        
+                                                                      <label>Data de Adimissão</label>
+                                                                      <input type="date" name="data-admissao" id="data-admissao" class="form-control">
+                                                                 </div>     
+                                                            </div>
+                                                                    
+        <!-- fechamento da coluna -->                    </div>
+
+         <!-- Início da coluna -->                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <div class="col">        
+                                                                      <label>Data de Demissão</label>
+                                                                      <input type="date" name="data-demissao" id="data-demissao" class="form-control">
+                                                                 </div>     
+                                                            </div>
+                                                                    
+        <!-- fechamento da coluna -->                    </div>
+     <!-- fechamento da linha --></div>
 
 
                 <br />
