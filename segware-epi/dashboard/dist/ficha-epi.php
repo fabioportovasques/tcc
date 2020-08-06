@@ -458,17 +458,17 @@
                                                    
 
                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <button class="btn btn-success btn-block" type="submit"><i class="glyphicon glyphicon-plus"> </i>...Adicionar</button>
+                                                                        <button class="btn btn-success btn-block" type="submit"><i class="glyphicon glyphicon-plus"> </i>&nbsp;&nbsp;&nbsp;Adicionar</button>
                                  <!--Fim da coluna-->       </div>
 
 
                                  <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                   <button class="btn btn-success btn-block" type="reset"><i class="glyphicon glyphicon-trash"> </i>...Imprimir ficha EPI</button>
+                                                                   <button class="btn btn-success btn-block" type="reset"><i class="glyphicon glyphicon-trash"> </i>&nbsp;&nbsp;&nbsp;Limpar</button>
 
                                 <!--Fim da coluna-->      </div>     
 
                                 <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                  <button class="btn btn-success btn-block" type="submit"><i class="glyphicon glyphicon-print"> </i>...Imprimir ficha EPI</button>
+                                                                  <button class="btn btn-success btn-block" type="submit"><i class="glyphicon glyphicon-print"> </i>&nbsp;&nbsp;&nbsp;Imprimir ficha EPI</button>
                                 <!--Fim da coluna-->      </div>     
 
 
