@@ -354,7 +354,7 @@
                                                                                                 <div class="   col">
                                                                                                    
                                                                                                     <label >Data de Retirada</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
+                                                                                                    <span class="campo-obrigatorio">*</span>
                                                                                                     <input type="date" name="data-retirada" id="data-retirada" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
                                                                                                 </div>
                                                                                             </div>
@@ -366,7 +366,7 @@
                                                                                           <div class="form-group">
                                                                                                 <div class="   col">
                                                                                                     <label >Data de Devolução</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
+                                                                                                    <span class="campo-obrigatorio">*</span>
                                                                                                     <input type="date" name="data-devolucao" id="data-devolucao" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
                                                                                                 </div>
                                                                                             </div>
@@ -379,7 +379,7 @@
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
                                                                                                     <label >Quantidade</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
+                                                                                                    <span class="campo-obrigatorio">*</span>
                                                                                                     <input type="number" name="quantidade" id="quantidade" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
                                                                                                    
                                                                                                 </div>
@@ -395,7 +395,7 @@
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
                                                                                                     <label >Unidade</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
+                                                                                                    <span class="campo-obrigatorio">*</span>
                                                                                                     <select class="form-control">
                                                                                                         <option></option>
                                                                                                         <option>Unidade</option>
@@ -411,8 +411,8 @@
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
                                                                                                     <label >C.A</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
-                                                                                                    <input type="number" name="ca" id="ca" class="form-control" required="">                                                                                                
+                                                                                                    <span class="campo-obrigatorio">*</span>
+                                                                                                    <input type="number" name="ca" id="ca" class="form-control" placeholder="Insira o número do C.A" required="">                                                                                                
                                                                                                 </div>
                                                                                             </div>
 
@@ -423,7 +423,7 @@
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
                                                                                                     <label >Descrição do Equipamento</label>
-                                                                                                    <span class="campo-obrigatorio"></span>
+                                                                                                    <span class="campo-obrigatorio">*</span>
                                                                                                     <input type="text" name="nome-epi" id="nome-epi" class="form-control" autocomplete="off" placeholder="Insira o nome do EPI">                                                                                                
                                                                                                 </div>
                                                                                             </div>
@@ -437,6 +437,7 @@
                                                 <div class="form-group">
                                                     <div class="col">
                                                         <label>Fabricante</label>
+                                                        <span class="campo-obrigatorio">*</span>
                                                         <select class="form-control" name="fabricante">
                                                             <option></option>
                                                             <option>Ultra Master</option>
