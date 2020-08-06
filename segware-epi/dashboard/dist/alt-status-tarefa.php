@@ -181,7 +181,7 @@
                                         </nav>
                                 </div>
                                    
-                                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
+                                 <a class="nav-link collapsed" href="ficha-epi.php" data-toggle="collapse" data-target="#collapseFichaEpi" aria-expanded="false" aria-controls="collapseLayouts">
                                         <div class="sb-nav-link-icon"></div>
 
                                         <!--icone -->
@@ -196,7 +196,7 @@
 
                             <div class="collapse" id="collapseFichaEpi" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Ficha E.P.I</a>
+                                    <a class="nav-link" href="ficha-epi.php">Ficha E.P.I</a>
                                 </nav>
                             </div>   
 

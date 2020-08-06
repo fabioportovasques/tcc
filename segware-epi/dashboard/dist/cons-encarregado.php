@@ -197,7 +197,7 @@
 
                             <div class="collapse" id="collapseFichaEpi" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="cad-func.php">Ficha E.P.I</a>
+                                    <a class="nav-link" href="ficha-epi.php">Ficha E.P.I</a>
                                 </nav>
                             </div>   
 
