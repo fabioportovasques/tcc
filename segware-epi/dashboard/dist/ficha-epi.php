@@ -463,8 +463,14 @@
 
 
                                  <!--Início da coluna-->     <div class="bot1 col-md-2">
-                                                                        <input class="btn btn-success container btn-block" type="reset" name="password"  value="Limpar">
+                                                                   <button class="btn btn-success btn-block" type="reset"><i class="glyphicon glyphicon-trash"> </i>...Imprimir ficha EPI</button>
+
                                 <!--Fim da coluna-->      </div>     
+
+                                <!--Início da coluna-->     <div class="bot1 col-md-2">
+                                                                  <button class="btn btn-success btn-block" type="submit"><i class="glyphicon glyphicon-print"> </i>...Imprimir ficha EPI</button>
+                                <!--Fim da coluna-->      </div>     
+
 
                                 <br />
                                 <br />
