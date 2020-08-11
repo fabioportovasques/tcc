@@ -1,0 +1,5 @@
+CREATE TABLE departamento (
+cod_departamento INT (10) AUTO_INCREMENT PRIMARY KEY,
+nome_dep VARCHAR(80)
+)
+
