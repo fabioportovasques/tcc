@@ -1,0 +1,44 @@
+consultas de dados
+
+
+
+Inserir Dados:
+
+tabela funcionario
+
+insert into funcionario (matricula_funcionario,nacionalidade,cpf,idade,data_demissao,data_admissao,data_nascimento,uf,nome_funcionario,sobrenome_funcionario,cidade,telefone1,telefone2,senha,rg,genero,status,foto_func,numero_rua,cod_departamento,cod_cargo) values
+('','Brazil','01023445678','23','','2020-10-20','1987-10-20','rs','Jacinto','Borges','Hulha Negra','99876534','','2345777','34666666666','masculino','ativo','','234','2','4');
+
+-------------------------------------------------------------------------------------------------------------
+tabela departamento
+
+insert into departamento(cod_departamento,nome_dep) values ('','Almoxarifado');
+-----------------------------------------------------------------------------------------------------------
+
+tabela cargo
+
+insert into cargo(cod_cargo,nome_cargo,descricao_cargo) values ('','Engenheiro Cívil','Responsavel pela atualização da planta daempresa além de obras em geral');
+-------------------------------------------------------------------------------------------------------------
+
+join:
+
+
+
+
+-----------------------------------------------------------
+trazer campos de ambas as tabelas:
+
+
+SELECT  d.nome_dep,D.cod_departamento, F.nome_funcionario,f.sobrenome_funcionario,F.data_nascimento,F.matricula_funcionario,f.cpf,f.uf 
+from departamento as d join funcionario AS f on f.matricula_funcionario
+
+filtrando por nome:
+
+SELECT d.nome_dep,f.nome_funcionario 
+from departamento AS d join funcionario AS f on f.matricula_funcionario where nome_funcionario = 'fabio geovane'
+
+select nome_funcionario, nome_dep FROM funcionario inner join departamento on funcionario.cod_departamento = departamento.cod_departamento
+
+
+
+

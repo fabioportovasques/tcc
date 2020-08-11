@@ -119,7 +119,8 @@ numero_rua int(10),
 dep_funcionario varchar(40),
 cod_departamento INT(10),
 cod_cargo int(10),
-FOREIGN KEY(cod_departamento) REFERENCES departamento (cod_departamento)
+FOREIGN KEY(cod_departamento) REFERENCES departamento (cod_departamento),
+FOREIGN KEY(cod_cargo) REFERENCES cargo (cod_cargo)
 )
 
 CREATE TABLE tarefa (
