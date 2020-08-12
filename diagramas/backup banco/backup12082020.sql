@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Ago-2020 às 23:13
+-- Tempo de geração: 12-Ago-2020 às 23:29
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.4
 
@@ -197,7 +197,6 @@ CREATE TABLE `funcionario` (
   `status` varchar(20) DEFAULT NULL,
   `foto_func` blob DEFAULT NULL,
   `numero_rua` int(10) DEFAULT NULL,
-  `dep_funcionario` varchar(40) DEFAULT NULL,
   `cod_departamento` int(10) DEFAULT NULL,
   `cod_cargo` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -206,13 +205,13 @@ CREATE TABLE `funcionario` (
 -- Extraindo dados da tabela `funcionario`
 --
 
-INSERT INTO `funcionario` (`matricula_funcionario`, `nacionalidade`, `cpf`, `idade`, `data_demissao`, `data_admissao`, `data_nascimento`, `uf`, `nome_funcionario`, `sobrenome_funcionario`, `cidade`, `telefone1`, `telefone2`, `senha`, `rg`, `genero`, `status`, `foto_func`, `numero_rua`, `dep_funcionario`, `cod_departamento`, `cod_cargo`) VALUES
-(11, 'Brazil', '01023445678', 23, '0000-00-00', '2020-10-20', '1987-10-20', 'rs', 'Jacinto', 'Borges', 'Hulha Negra', 99876534, 0, 2345777, '34666666666', 'masculino', 'ativo', '', 234, NULL, 2, 4),
-(20, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'Carlos', 'Vitalicio', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 3, 4),
-(21, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 1', 'de tal', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 3, 4),
-(22, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 2', 'de tal2', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 1, 1),
-(23, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulana 1', 'de tal 1', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'Femenino', 'ativo', NULL, 434, NULL, 4, 6),
-(24, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 3', 'de tal3', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 5, 5);
+INSERT INTO `funcionario` (`matricula_funcionario`, `nacionalidade`, `cpf`, `idade`, `data_demissao`, `data_admissao`, `data_nascimento`, `uf`, `nome_funcionario`, `sobrenome_funcionario`, `cidade`, `telefone1`, `telefone2`, `senha`, `rg`, `genero`, `status`, `foto_func`, `numero_rua`, `cod_departamento`, `cod_cargo`) VALUES
+(11, 'Brazil', '01023445678', 23, '0000-00-00', '2020-10-20', '1987-10-20', 'rs', 'Jacinto', 'Borges', 'Hulha Negra', 99876534, 0, 2345777, '34666666666', 'masculino', 'ativo', '', 234, 2, 4),
+(20, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'Carlos', 'Vitalicio', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, 3, 4),
+(21, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 1', 'de tal', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, 3, 4),
+(22, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 2', 'de tal2', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, 1, 1),
+(23, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulana 1', 'de tal 1', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'Femenino', 'ativo', NULL, 434, 4, 6),
+(24, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 3', 'de tal3', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, 5, 5);
 
 -- --------------------------------------------------------
 
