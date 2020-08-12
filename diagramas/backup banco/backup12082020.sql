@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Ago-2020 às 23:10
--- Versão do servidor: 10.4.13-MariaDB
--- versão do PHP: 7.4.8
+-- Tempo de geração: 12-Ago-2020 às 23:13
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,6 +33,18 @@ CREATE TABLE `cargo` (
   `descricao_cargo` varchar(80) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `cargo`
+--
+
+INSERT INTO `cargo` (`cod_cargo`, `nome_cargo`, `descricao_cargo`) VALUES
+(1, 'Almoxarife', 'Responsavel pela pelo almoxarifado'),
+(2, 'aux. de almoxarifado', 'Responsavel pela pelo almoxarifado'),
+(3, 'tecnico em informatica', 'Responsavel pela T.I da empresa'),
+(4, 'mecanico', ''),
+(5, 'Engenheiro', 'Responsavel pela atualização da planta daempresa além de obras em geral'),
+(6, 'Aux. de serviços gerais', 'Responsavel pela limpeza em geral');
+
 -- --------------------------------------------------------
 
 --
@@ -43,6 +55,17 @@ CREATE TABLE `departamento` (
   `cod_departamento` int(10) NOT NULL,
   `nome_dep` varchar(80) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `departamento`
+--
+
+INSERT INTO `departamento` (`cod_departamento`, `nome_dep`) VALUES
+(1, 'Almoxarifado'),
+(2, 'tecnologia da informação'),
+(3, 'Mecanica'),
+(4, 'serviços gerais'),
+(5, 'engenharia');
 
 -- --------------------------------------------------------
 
@@ -178,6 +201,18 @@ CREATE TABLE `funcionario` (
   `cod_departamento` int(10) DEFAULT NULL,
   `cod_cargo` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `funcionario`
+--
+
+INSERT INTO `funcionario` (`matricula_funcionario`, `nacionalidade`, `cpf`, `idade`, `data_demissao`, `data_admissao`, `data_nascimento`, `uf`, `nome_funcionario`, `sobrenome_funcionario`, `cidade`, `telefone1`, `telefone2`, `senha`, `rg`, `genero`, `status`, `foto_func`, `numero_rua`, `dep_funcionario`, `cod_departamento`, `cod_cargo`) VALUES
+(11, 'Brazil', '01023445678', 23, '0000-00-00', '2020-10-20', '1987-10-20', 'rs', 'Jacinto', 'Borges', 'Hulha Negra', 99876534, 0, 2345777, '34666666666', 'masculino', 'ativo', '', 234, NULL, 2, 4),
+(20, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'Carlos', 'Vitalicio', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 3, 4),
+(21, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 1', 'de tal', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 3, 4),
+(22, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 2', 'de tal2', 'Hulha Negra', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 1, 1),
+(23, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulana 1', 'de tal 1', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'Femenino', 'ativo', NULL, 434, NULL, 4, 6),
+(24, 'Brasileiro', '020456783', 25, '2019-08-06', '2020-08-01', '0000-00-00', 'rs', 'fulano 3', 'de tal3', 'Bagé', 999876543, NULL, 342354435, '1096853931', 'masculino', 'ativo', NULL, 434, NULL, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -339,13 +374,13 @@ ALTER TABLE `tarefa_epi`
 -- AUTO_INCREMENT de tabela `cargo`
 --
 ALTER TABLE `cargo`
-  MODIFY `cod_cargo` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_cargo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `departamento`
 --
 ALTER TABLE `departamento`
-  MODIFY `cod_departamento` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_departamento` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `epi`
@@ -375,7 +410,7 @@ ALTER TABLE `fornecedor`
 -- AUTO_INCREMENT de tabela `funcionario`
 --
 ALTER TABLE `funcionario`
-  MODIFY `matricula_funcionario` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `matricula_funcionario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `motivo`
