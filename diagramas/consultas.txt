@@ -39,6 +39,8 @@ from departamento AS d join funcionario AS f on f.matricula_funcionario where no
 
 select nome_funcionario, nome_dep FROM funcionario inner join departamento on funcionario.cod_departamento = departamento.cod_departamento
 
+--------------------------------------------------------------
+
 inner join com 3 tabelas:
 
 SELECT nome_funcionario, nome_dep,nome_cargo 
