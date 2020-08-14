@@ -1,4 +1,4 @@
-consultas de dados
+﻿consultas de dados
 
 
 
@@ -39,6 +39,16 @@ from departamento AS d join funcionario AS f on f.matricula_funcionario where no
 
 select nome_funcionario, nome_dep FROM funcionario inner join departamento on funcionario.cod_departamento = departamento.cod_departamento
 
+inner join com 3 tabelas:
 
+SELECT nome_funcionario, nome_dep,nome_cargo 
+FROM funcionario fcnr
 
+INNER JOIN departamento dprt ON fcnr.cod_departamento = dprt.cod_departamento INNER JOIN cargo crg ON fcnr.cod_cargo =  crg.cod_cargo
+
+---------------------------------------------------------------
+
+UPDATE
+
+UPDATE funcionario SET cod_departamento = '3'   WHERE nome_funcionario = 'jacinto'  
 
