@@ -6,8 +6,9 @@ Inserir Dados:
 
 tabela funcionario
 
-insert into funcionario (matricula_funcionario,nacionalidade,cpf,idade,data_demissao,data_admissao,data_nascimento,uf,nome_funcionario,sobrenome_funcionario,cidade,telefone1,telefone2,senha,rg,genero,status,foto_func,numero_rua,cod_departamento,cod_cargo) values
-('','Brazil','01023445678','23','','2020-10-20','1987-10-20','rs','Jacinto','Borges','Hulha Negra','99876534','','2345777','34666666666','masculino','ativo','','234','2','4');
+insert into funcionario (matricula_func,nome_func,sobrenome_func,idade,cpf,rg,telefone1,telefone2,genero,status,data_nascimento,data_admissao,data_demissao,nacionalidade,uf,cidade,bairro,rua,cep,numero_rua,foto_func,senha,departamento_cod_dep,cargo_cod_cargo) values
+(null,'fabio geovane','porto vasques','32','02041884070','1096853031','999367651',null,'masculino','ativo','1987-11-17','2020-03-02',null,'brasileiro','rs','Bage','Pedra Branca','joaquim gasso borges','96418260','841',null,'0992','2','2');
+
 
 -------------------------------------------------------------------------------------------------------------
 tabela departamento
@@ -43,10 +44,11 @@ select nome_funcionario, nome_dep FROM funcionario inner join departamento on fu
 
 inner join com 3 tabelas:
 
-SELECT nome_funcionario, nome_dep,nome_cargo 
+SELECT nome_func, nome_dep,nome_cargo 
 FROM funcionario fcnr
 
-INNER JOIN departamento dprt ON fcnr.cod_departamento = dprt.cod_departamento INNER JOIN cargo crg ON fcnr.cod_cargo =  crg.cod_cargo
+INNER JOIN departamento dprt ON fcnr.departamento_cod_dep = dprt.cod_dep INNER JOIN cargo crg ON fcnr.cargo_cod_cargo =  crg.cod_cargo;
+
 
 ---------------------------------------------------------------
 
