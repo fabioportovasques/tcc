@@ -52,6 +52,26 @@ INNER JOIN departamento dprt ON fcnr.departamento_cod_dep = dprt.cod_dep INNER J
 
 ---------------------------------------------------------------
 
+inner join 4 tabelas:
+
+SELECT nome_func, nome_dep,nome_cargo,nome_epi
+FROM funcionario fcnr
+
+INNER JOIN departamento dprt ON fcnr.departamento_cod_dep = dprt.cod_dep INNER JOIN cargo crg ON fcnr.cargo_cod_cargo =  crg.cod_cargo INNER JOIN epi e ON fcnr.epi_cod_epi = e.cod_epi;
+
+----------------------------------------------------------------------
+
+inner join 5 tabelas
+
+SELECT nome_func, nome_dep,nome_cargo
+FROM funcionario fcnr
+
+INNER JOIN departamento dprt ON fcnr.departamento_cod_dep = dprt.cod_dep INNER JOIN cargo crg ON fcnr.cargo_cod_cargo =  crg.cod_cargo;
+-----------------------------------------------------------------------------
+
+
+
+
 UPDATE
 
 UPDATE funcionario SET cod_departamento = '3'   WHERE nome_funcionario = 'jacinto'  
