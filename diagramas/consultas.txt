@@ -79,6 +79,21 @@ INNER JOIN epi e
 ON e.cod_epi = fe.epi_cod_epi;
 
 ---------------------------------------------------------------------------------------------
+INNER JOIN  com tablema associativa e tabelas normais:
+
+select nome_func,sobrenome_func,nome_epi,nome_dep
+FROM funcionario f
+INNER JOIN funcionario_epi fe
+ON f.matricula_func = fe.funcionario_matricula_func
+INNER JOIN epi e 
+ON e.cod_epi = fe.epi_cod_epi
+INNER JOIN departamento dep
+ON dep.cod_dep = f.departamento_cod_dep;
+
+-----------------------------------------------------------------------------------------
+
+
+
 
 
 
