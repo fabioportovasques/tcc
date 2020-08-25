@@ -5,19 +5,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema segware-epi
+-- Schema mydb
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema segware-epi
+-- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `segware-epi` DEFAULT CHARACTER SET utf8 ;
-USE `segware-epi` ;
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+USE `mydb` ;
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`departamento`
+-- Table `mydb`.`departamento`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`departamento` (
+CREATE TABLE IF NOT EXISTS `mydb`.`departamento` (
   `cod_dep` INT NOT NULL AUTO_INCREMENT,
   `nome_dep` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`cod_dep`))
@@ -25,9 +25,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`cargo`
+-- Table `mydb`.`cargo`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`cargo` (
+CREATE TABLE IF NOT EXISTS `mydb`.`cargo` (
   `cod_cargo` INT NOT NULL AUTO_INCREMENT,
   `nome_cargo` VARCHAR(45) NOT NULL,
   `obs` VARCHAR(100) NULL,
@@ -36,9 +36,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`funcionario`
+-- Table `mydb`.`funcionario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`funcionario` (
+CREATE TABLE IF NOT EXISTS `mydb`.`funcionario` (
   `matricula_func` INT NOT NULL AUTO_INCREMENT,
   `nome_func` VARCHAR(50) NOT NULL,
   `sobrenome_func` VARCHAR(50) NOT NULL,
@@ -69,21 +69,21 @@ CREATE TABLE IF NOT EXISTS `segware-epi`.`funcionario` (
   INDEX `fk_funcionario_cargo1_idx` (`cargo_cod_cargo` ASC),
   CONSTRAINT `fk_funcionario_departamento`
     FOREIGN KEY (`departamento_cod_dep`)
-    REFERENCES `segware-epi`.`departamento` (`cod_dep`)
+    REFERENCES `mydb`.`departamento` (`cod_dep`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_funcionario_cargo1`
     FOREIGN KEY (`cargo_cod_cargo`)
-    REFERENCES `segware-epi`.`cargo` (`cod_cargo`)
+    REFERENCES `mydb`.`cargo` (`cod_cargo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`tarefa`
+-- Table `mydb`.`tarefa`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`tarefa` (
+CREATE TABLE IF NOT EXISTS `mydb`.`tarefa` (
   `cod_tarefa` INT NOT NULL AUTO_INCREMENT,
   `nome_tarefa` VARCHAR(45) NOT NULL,
   `descricao_tarefa` VARCHAR(150) NOT NULL,
@@ -100,9 +100,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`epi`
+-- Table `mydb`.`epi`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`epi` (
+CREATE TABLE IF NOT EXISTS `mydb`.`epi` (
   `cod_epi` INT NOT NULL AUTO_INCREMENT,
   `nome_epi` VARCHAR(50) NOT NULL,
   `descricao_epi` VARCHAR(150) NOT NULL,
@@ -117,9 +117,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`fabricante`
+-- Table `mydb`.`fabricante`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`fabricante` (
+CREATE TABLE IF NOT EXISTS `mydb`.`fabricante` (
   `cod_fabricante` INT NOT NULL AUTO_INCREMENT,
   `nome_fabricante` VARCHAR(50) NOT NULL,
   `descricao_fabricante` VARCHAR(60) NULL,
@@ -132,9 +132,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`fornecedor`
+-- Table `mydb`.`fornecedor`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`fornecedor` (
+CREATE TABLE IF NOT EXISTS `mydb`.`fornecedor` (
   `cnpj_fornecedor` INT NOT NULL,
   `nome_fornecedor` VARCHAR(50) NOT NULL,
   `razao_social_fornecedor` VARCHAR(45) NULL,
@@ -155,9 +155,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`segware-epi`
+-- Table `mydb`.`motivo`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`motivo` (
+CREATE TABLE IF NOT EXISTS `mydb`.`motivo` (
   `cod_motivo` INT NOT NULL AUTO_INCREMENT,
   `nome_motivo` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`cod_motivo`))
@@ -165,9 +165,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`ficha_epi`
+-- Table `mydb`.`ficha_epi`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`ficha_epi` (
+CREATE TABLE IF NOT EXISTS `mydb`.`ficha_epi` (
   `cod_ficha_epi` INT NOT NULL AUTO_INCREMENT,
   `nome_epi_ficha` VARCHAR(45) NOT NULL,
   `ca_ficha` INT NOT NULL,
@@ -186,26 +186,26 @@ CREATE TABLE IF NOT EXISTS `segware-epi`.`ficha_epi` (
   INDEX `fk_ficha_epi_funcionario1_idx` (`funcionario_matricula_func` ASC),
   CONSTRAINT `fk_ficha_epi_epi1`
     FOREIGN KEY (`epi_cod_epi`)
-    REFERENCES `segware-epi`.`epi` (`cod_epi`)
+    REFERENCES `mydb`.`epi` (`cod_epi`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ficha_epi_motivo1`
     FOREIGN KEY (`motivo_cod_motivo`)
-    REFERENCES `segware-epi`.`motivo` (`cod_motivo`)
+    REFERENCES `mydb`.`motivo` (`cod_motivo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ficha_epi_funcionario1`
     FOREIGN KEY (`funcionario_matricula_func`)
-    REFERENCES `segware-epi`.`funcionario` (`matricula_func`)
+    REFERENCES `mydb`.`funcionario` (`matricula_func`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`fabricante_epi`
+-- Table `mydb`.`fabricante_epi`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`fabricante_epi` (
+CREATE TABLE IF NOT EXISTS `mydb`.`fabricante_epi` (
   `fabricante_cod_fabricante` INT NOT NULL,
   `epi_cod_epi` INT NOT NULL,
   PRIMARY KEY (`fabricante_cod_fabricante`, `epi_cod_epi`),
@@ -213,21 +213,21 @@ CREATE TABLE IF NOT EXISTS `segware-epi`.`fabricante_epi` (
   INDEX `fk_fabricante_has_epi_fabricante1_idx` (`fabricante_cod_fabricante` ASC),
   CONSTRAINT `fk_fabricante_has_epi_fabricante1`
     FOREIGN KEY (`fabricante_cod_fabricante`)
-    REFERENCES `segware-epi`.`fabricante` (`cod_fabricante`)
+    REFERENCES `mydb`.`fabricante` (`cod_fabricante`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_fabricante_has_epi_epi1`
     FOREIGN KEY (`epi_cod_epi`)
-    REFERENCES `segware-epi`.`epi` (`cod_epi`)
+    REFERENCES `mydb`.`epi` (`cod_epi`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`fornecedor_epi`
+-- Table `mydb`.`fornecedor_epi`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`fornecedor_epi` (
+CREATE TABLE IF NOT EXISTS `mydb`.`fornecedor_epi` (
   `fornecedor_cnpj_fornecedor` INT NOT NULL,
   `epi_cod_epi` INT NOT NULL,
   PRIMARY KEY (`fornecedor_cnpj_fornecedor`, `epi_cod_epi`),
@@ -235,65 +235,65 @@ CREATE TABLE IF NOT EXISTS `segware-epi`.`fornecedor_epi` (
   INDEX `fk_fornecedor_has_epi_fornecedor1_idx` (`fornecedor_cnpj_fornecedor` ASC),
   CONSTRAINT `fk_fornecedor_has_epi_fornecedor1`
     FOREIGN KEY (`fornecedor_cnpj_fornecedor`)
-    REFERENCES `segware-epi`.`fornecedor` (`cnpj_fornecedor`)
+    REFERENCES `mydb`.`fornecedor` (`cnpj_fornecedor`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_fornecedor_has_epi_epi1`
     FOREIGN KEY (`epi_cod_epi`)
-    REFERENCES `segware-epi`.`epi` (`cod_epi`)
+    REFERENCES `mydb`.`epi` (`cod_epi`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`epi_tarefa`
+-- Table `mydb`.`epi_tarefa`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`epi_tarefa` (
+CREATE TABLE IF NOT EXISTS `mydb`.`epi_tarefa` (
   `epi_cod_epi` INT NOT NULL,
   `tarefa_cod_tarefa` INT NOT NULL,
   PRIMARY KEY (`epi_cod_epi`, `tarefa_cod_tarefa`),
   INDEX `fk_epi_has_tarefa_tarefa1_idx` (`tarefa_cod_tarefa` ASC),
   INDEX `fk_epi_has_tarefa_epi1_idx` (`epi_cod_epi` ASC),
-  CONSTRAINT `fk_epi_has_tarefa_epi`
+  CONSTRAINT `fk_epi_has_tarefa_epi1`
     FOREIGN KEY (`epi_cod_epi`)
-    REFERENCES `segware-epi`.`epi` (`cod_epi`)
+    REFERENCES `mydb`.`epi` (`cod_epi`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_epi_has_tarefa_tarefa`
+  CONSTRAINT `fk_epi_has_tarefa_tarefa1`
     FOREIGN KEY (`tarefa_cod_tarefa`)
-    REFERENCES `segware-epi`.`tarefa` (`cod_tarefa`)
+    REFERENCES `mydb`.`tarefa` (`cod_tarefa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`funcionario_epi`
+-- Table `mydb`.`funcionario_epi`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`funcionario_epi` (
+CREATE TABLE IF NOT EXISTS `mydb`.`funcionario_epi` (
   `funcionario_matricula_func` INT NOT NULL,
   `epi_cod_epi` INT NOT NULL,
   PRIMARY KEY (`funcionario_matricula_func`, `epi_cod_epi`),
   INDEX `fk_funcionario_has_epi_epi1_idx` (`epi_cod_epi` ASC),
   INDEX `fk_funcionario_has_epi_funcionario1_idx` (`funcionario_matricula_func` ASC),
-  CONSTRAINT `fk_funcionario_has_epi_funcionario`
+  CONSTRAINT `fk_funcionario_has_epi_funcionario1`
     FOREIGN KEY (`funcionario_matricula_func`)
-    REFERENCES `segware-epi`.`funcionario` (`matricula_func`)
+    REFERENCES `mydb`.`funcionario` (`matricula_func`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_funcionario_has_epi_epi1`
     FOREIGN KEY (`epi_cod_epi`)
-    REFERENCES `segware-epi`.`epi` (`cod_epi`)
+    REFERENCES `mydb`.`epi` (`cod_epi`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `segware-epi`.`funcionario_tarefa`
+-- Table `mydb`.`funcionario_tarefa`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `segware-epi`.`funcionario_tarefa` (
+CREATE TABLE IF NOT EXISTS `mydb`.`funcionario_tarefa` (
   `funcionario_matricula_func` INT NOT NULL,
   `tarefa_cod_tarefa` INT NOT NULL,
   PRIMARY KEY (`funcionario_matricula_func`, `tarefa_cod_tarefa`),
@@ -301,12 +301,12 @@ CREATE TABLE IF NOT EXISTS `segware-epi`.`funcionario_tarefa` (
   INDEX `fk_funcionario_has_tarefa_funcionario1_idx` (`funcionario_matricula_func` ASC),
   CONSTRAINT `fk_funcionario_has_tarefa_funcionario1`
     FOREIGN KEY (`funcionario_matricula_func`)
-    REFERENCES `segware-epi`.`funcionario` (`matricula_func`)
+    REFERENCES `mydb`.`funcionario` (`matricula_func`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_funcionario_has_tarefa_tarefa`
+  CONSTRAINT `fk_funcionario_has_tarefa_tarefa1`
     FOREIGN KEY (`tarefa_cod_tarefa`)
-    REFERENCES `segware-epi`.`tarefa` (`cod_tarefa`)
+    REFERENCES `mydb`.`tarefa` (`cod_tarefa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

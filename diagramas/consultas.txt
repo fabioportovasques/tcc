@@ -91,7 +91,17 @@ INNER JOIN departamento dep
 ON dep.cod_dep = f.departamento_cod_dep;
 
 -----------------------------------------------------------------------------------------
+INNER JOIN  com tablema associativa e tabelas normais:
 
+SELECT nome_func, nome_tarefa
+FROM funcionario f
+INNER JOIN funcionario_tarefa funta
+ON f.matricula_func = funcionario_matricula_func
+INNER JOIN tarefa tar
+ON tar.cod_tarefa = funta.tarefa_cod_tarefa;
+
+
+----------------------------------------------------------------------------------------
 
 
 
