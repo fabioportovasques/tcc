@@ -103,6 +103,23 @@ ON tar.cod_tarefa = funta.tarefa_cod_tarefa;
 
 ----------------------------------------------------------------------------------------
 
+INNER JOIN  com duas tabelas associativa e tabelas normais:
+
+select nome_func,sobrenome_func,nome_epi,nome_tarefa
+FROM funcionario f
+INNER JOIN funcionario_epi fe
+ON f.matricula_func = fe.funcionario_matricula_func
+INNER JOIN epi e 
+ON e.cod_epi = fe.epi_cod_epi
+INNER JOIN funcionario_tarefa funtar
+ON funtar.funcionario_matricula_func = f.matricula_func
+INNER JOIN tarefa tar
+ON tar.cod_tarefa = funtar.tarefa_cod_tarefa;
+
+-----------------------------------------------------------------------------------
+
+
+
 
 
 
