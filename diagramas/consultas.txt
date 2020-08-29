@@ -105,6 +105,8 @@ ON tar.cod_tarefa = funta.tarefa_cod_tarefa;
 
 INNER JOIN  com duas tabelas associativa e tabelas normais:
 
+consulta de funcionario/ EPI/ tarefa: 
+
 select nome_func,sobrenome_func,nome_epi,nome_tarefa
 FROM funcionario f
 INNER JOIN funcionario_epi fe
@@ -117,6 +119,41 @@ INNER JOIN tarefa tar
 ON tar.cod_tarefa = funtar.tarefa_cod_tarefa;
 
 -----------------------------------------------------------------------------------
+
+consulta funcionario / EPI
+
+SELECT nome_func, nome_epi
+FROM funcionario f 
+INNER JOIN 	funcionario_epi fepi
+ON f.matricula_func = fepi.funcionario_matricula_func
+INNER JOIN epi e
+ON e.cod_epi  = fepi.epi_cod_epi;
+
+
+-----------------------------------------------------------------------------------
+
+consultar EPI/fabricante
+
+SELECT nome_fabricante, nome_epi,ca,venc_ca
+FROM fabricante f 
+INNER JOIN 	fabricante_epi fae
+ON f.cod_fabricante = fae.fabricante_cod_fabricante
+INNER JOIN epi e
+ON e.cod_epi  = fae.epi_cod_epi;
+
+-----------------------------------------------------------------------------------
+
+Consultar EPI / Fornecedor
+
+SELECT nome_epi,nome_fornecedor
+FROM epi e
+INNER JOIN fornecedor_epi fe
+ON e.cod_epi = fe.epi_cod_epi
+INNER JOIN fornecedor fo
+ON fo.cod_fornecedor = fe.fornecedor_cod_fornecedor;
+
+--------------------------------------------------------------------------------
+
 
 
 
