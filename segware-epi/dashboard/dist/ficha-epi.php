@@ -273,7 +273,7 @@
                                                                                      <div class="col">
                                                                                         <label > Nome Funcionário</label>
                                                                                           <span class="campo-obrigatorio"></span>
-                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome" autocomplete="off" required="" >    
+                                                                                        <input type="text" name="nome-func" id="nome-func" class="form-control" placeholder="Nome" autocomplete="off" required="" disabled="off" >    
                                                                                     </div>
 
                                                                                 </div>
@@ -289,7 +289,7 @@
                                                                                      <div class="col">
                                                                                         <label > Data de Admissão</label>
                                                                                         <span class="campo-obrigatorio"></span>
-                                                                                        <input type="date" name="data-admissao" id="data-admissao" class="form-control"   autocomplete="off" required="" >
+                                                                                        <input type="date" name="data-admissao" id="data-admissao" class="form-control"   autocomplete="off" required="" disabled="off" >
                                                                                     </div>    
                                                                                 </div>
 
@@ -309,7 +309,7 @@
                                                                                     <div class="col">
                                                                                         <label > Data de Demissão</label>
                                                                                         <span class="campo-obrigatorio"></span>
-                                                                                        <input type="date" name="data-demissao" id="data-demissao" class="form-control"   autocomplete="off" required="" >    
+                                                                                        <input type="date" name="data-demissao" id="data-demissao" class="form-control"   autocomplete="off" required="" disabled="off" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -324,7 +324,7 @@
                                                                                     <div class="   col">
                                                                                         <label >Função</label>
                                                                                         <span class="campo-obrigatorio"></span>
-                                                                                        <input type="text" name="funcao" id="funcao" class="form-control" placeholder="Função"  autocomplete="off" required="" >    
+                                                                                        <input type="text" name="funcao" id="funcao" class="form-control" placeholder="Função"  autocomplete="off" required="" disabled="off" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -337,7 +337,7 @@
                                                                                     <div class="   col">
                                                                                         <label >Departamento</label>
                                                                                         <span class="campo-obrigatorio"></span>
-                                                                                        <input type="text" name="dep-func" id="dep-func" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
+                                                                                        <input type="text" name="dep-func" id="dep-func" class="form-control" placeholder="Departamento"  autocomplete="off" required="" disabled="off" >    
                                                                                     </div>
                                                                                 </div>
 
@@ -355,7 +355,7 @@
                                                                                                    
                                                                                                     <label >Data de Retirada</label>
                                                                                                     <span class="campo-obrigatorio">*</span>
-                                                                                                    <input type="date" name="data-retirada" id="data-retirada" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
+                                                                                                    <input type="date" name="data-retirada" id="data-retirada" class="form-control" placeholder="Departamento"  autocomplete="off" required="" disabled="off" >    
                                                                                                 </div>
                                                                                             </div>
 
@@ -367,7 +367,7 @@
                                                                                                 <div class="   col">
                                                                                                     <label >Data de Devolução</label>
                                                                                                     <span class="campo-obrigatorio">*</span>
-                                                                                                    <input type="date" name="data-devolucao" id="data-devolucao" class="form-control" placeholder="Departamento"  autocomplete="off" required="" >    
+                                                                                                    <input type="date" name="data-devolucao" id="data-devolucao" class="form-control" placeholder="Departamento"  autocomplete="off" required="" disabled="off" >    
                                                                                                 </div>
                                                                                             </div>
 
@@ -410,9 +410,9 @@
 
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
-                                                                                                    <label >C.A</label>
+                                                                                                    <label >Cod de Barras do E.P.I</label>
                                                                                                     <span class="campo-obrigatorio">*</span>
-                                                                                                    <input type="number" name="ca" id="ca" class="form-control" placeholder="Insira o número do C.A" required="">                                                                                                
+                                                                                                    <input type="number" name="ca" id="ca" class="form-control" placeholder="Digite o Cod de barras contido no E.P.I" required="">                                                                                                
                                                                                                 </div>
                                                                                             </div>
 
@@ -422,9 +422,9 @@
 
                                                                                           <div class="form-group">
                                                                                                 <div class="col">
-                                                                                                    <label >Descrição do Equipamento</label>
+                                                                                                    <label >Nome do E.P.I</label>
                                                                                                     <span class="campo-obrigatorio">*</span>
-                                                                                                    <input type="text" name="nome-epi" id="nome-epi" class="form-control" autocomplete="off" placeholder="Insira o nome do EPI">                                                                                                
+                                                                                                    <input type="text" name="nome-epi" id="nome-epi" class="form-control" autocomplete="off" disabled="off" placeholder="Descrição nome do EPI">                                                                                                
                                                                                                 </div>
                                                                                             </div>
 
@@ -433,12 +433,12 @@
             <!--Fechamento da linha-->    </div>
  
             <!-- inicio da linha-->    <div class="row">
-                                            <div class="col-md-12">
+              <!--Inicio da coluna-->       <div class="col-md-4">
                                                 <div class="form-group">
                                                     <div class="col">
                                                         <label>Fabricante</label>
                                                         <span class="campo-obrigatorio">*</span>
-                                                        <select class="form-control" name="fabricante">
+                                                        <select class="form-control" name="fabricante" disabled="off">
                                                             <option></option>
                                                             <option>Ultra Master</option>
                                                             <option>fabricante1</option>
@@ -447,7 +447,34 @@
                                                     </div>
                                                     
                                                 </div>
-                                            </div>
+                <!--Fim da coluna--></div>
+
+                <!--Início da coluna-->    <div class="marcador1 col-md-4">
+
+                                                                                          <div class="form-group">
+                                                                                                <div class="col">
+                                                                                                    <label >C.A </label>
+                                                                                                    <span class="campo-obrigatorio">*</span>
+                                                                                                    <input type="text" name="ca" id="ca" class="form-control" autocomplete="off" disabled="off" placeholder="C.A">                                                                                                
+                                                                                                </div>
+                                                                                            </div>
+
+                 <!--Fim da coluna-->        </div> 
+
+                                 <!--Início da coluna-->    <div class="marcador1 col-md-4">
+
+                                                                                          <div class="form-group">
+                                                                                                <div class="col">
+                                                                                                    <label >Vencimento C.A </label>
+                                                                                                    <span class="campo-obrigatorio">*</span>
+                                                                                                    <input type="text" name="ca" id="ca" class="form-control" autocomplete="off" disabled="off" placeholder="dd/mm/aaaa">                                                                                                
+                                                                                                </div>
+                                                                                            </div>
+
+                 <!--Fim da coluna-->        </div> 
+
+
+
             <!--fechamento da linha--> </div>
 
 

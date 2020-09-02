@@ -63,7 +63,7 @@ $(document).ready(function(){
             <td>Ultra Master</td>
            <td>ededed</td>
            
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir EPI"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 
         <tr>
@@ -74,7 +74,7 @@ $(document).ready(function(){
           <td></td>
           <td>Ultra Master</td>
           <td>eeerrerf</td>
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir EPI"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 
          <tr>
@@ -85,7 +85,7 @@ $(document).ready(function(){
            <td></td>
            <td>Ultra Master</td>
            <td>eededed</td>
-        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir colaborador"><i class="glyphicon glyphicon-minus"></i></button></td>
+        <td align="center"><button class="btn btn-light" data-toggle="tooltip"     data-placement="right" title="Excluir EPI"><i class="glyphicon glyphicon-minus"></i></button></td>
         </tr>
 </table>  
 
