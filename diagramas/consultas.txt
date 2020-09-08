@@ -154,6 +154,27 @@ ON fo.cod_fornecedor = fe.fornecedor_cod_fornecedor;
 
 --------------------------------------------------------------------------------
 
+Query retornar EPI, FICHA DE EPI E FUNCIONARIO
+
+obs: sempre vincular epi_ficha_epi e funcionario_ficha_epi
+
+INSERT INTO  epi_ficha_epi(epi_cod_epi,ficha_epi_cod_ficha_epi) VALUE (1,1);
+
+INSERT INTO funcionario_ficha_epi (funcionario_matricula_func,ficha_epi_cod_ficha_epi)VALUE (1,1);
+
+
+select data_entrega_ficha,nome_epi,descricao_epi,ca,venc_ca,nome_func,sobrenome_func
+FROM ficha_epi fi
+INNER JOIN epi e
+ON fi.cod_ficha_epi = e.cod_epi
+INNER JOIN funcionario_ficha_epi  func_ficha 
+INNER JOIN funcionario func
+ON func.matricula_func = func_ficha.ficha_epi_cod_ficha_epi;
+
+----------------------------------------------------------------------------------------
+
+
+
 
 
 
